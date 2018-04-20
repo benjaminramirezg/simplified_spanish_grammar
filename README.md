@@ -14,22 +14,22 @@ This is the code developed as an empirical proof of the ideas defended in my PhD
 * Install mysql server
 * Install Perl dependencies
 * Run:
-* perl CreateLexicon.pl
-* perl LoadNewGrammar.pl 
-* Enter Mysql user and password; and ssg as grammar
-* perl LoadNewGrammar.pl
-* Enter Mysql user and password; and nssg as grammar
+  * perl CreateLexicon.pl
+  * perl LoadNewGrammar.pl 
+  * Enter Mysql user and password; and ssg as grammar
+  * perl LoadNewGrammar.pl
+  * Enter Mysql user and password; and nssg as grammar
 
 ## Testing
 
 * Run ssg:
-* perl ParseSentences.pl
-* Enter Mysql user and password; ssg as grammar and 1 as scrambling
-* Enter one of the sentences of ./TestSuite.txt
-* See the result in ./TREES
+  * perl ParseSentences.pl
+  * Enter Mysql user and password; ssg as grammar and 1 as scrambling
+  * Enter one of the sentences of ./TestSuite.txt
+  * See the result in ./TREES
 
 * Run nssg:
-* perl ParseSentences.pl
-* Enter Mysql user and password; nssg as grammar and 0 as scrambling
-* Enter one of the sentences of ./TestSuite.txt
-* See the result in ./TREES
+  * perl ParseSentences.pl
+  * Enter Mysql user and password; nssg as grammar and 0 as scrambling
+  * Enter one of the sentences of ./TestSuite.txt
+  * See the result in ./TREES
