@@ -1,0 +1,7 @@
+grule	./ssg/grammar_rules.tdl
+lrule	./ssg/lexical_rules.tdl
+irule	./ssg/infl_rules.tdl
+lexicon	./ssg/lexicon.tdl
+axiom	./ssg/root.tdl
+type	./ssg/types.tdl
+type	./ssg/spanish.tdl

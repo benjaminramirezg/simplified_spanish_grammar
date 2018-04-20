@@ -1,0 +1,13 @@
+;;; NOMINALES
+
+;;; VERBALES
+
+v-transitive-rule := v-transitive-c.
+v-passive-rule := v-passive-c.
+v-rpass-rule := v-rpass-c.
+v-unergative-rule := v-unergative-c.
+v-unaccusative-rule := v-unaccusative-c.
+v-pronominal-rule := v-pronominal-c.
+v-dative-rule := v-dative-c.
+v-obliq-rule := v-obliq-c.
+v-predicative-rule := v-predicative-c.

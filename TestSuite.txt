@@ -1,0 +1,118 @@
+Sé cosas.
+Sé los precios.
+Sé que han subido los precios.
+Sé calcular los precios.
+Me acuerdo de cosas.
+Me acuerdo del precio.
+Me acuerdo de que ha subido el precio.
+¿Te acuerdas de subir los precios?
+El hotel ha contratado al guía.
+Ha sido contratado un guía.
+Se han contratado dos guías.
+El hotel ha contratado.
+[ Ellos ] El hotel ha contratado que suban el precio.
+El botones ha subido el equipaje hasta la habitación.
+¿Ellos han convencido al guía de todo?
+Ellos han comparado el hotel con el resort.
+El hotel nos ha contratado un guía.
+Nos ha sido contratado un guía.
+Se nos han contratado dos guías.
+El botones os ha subido el equipaje hasta la habitación.
+¿ [ A él ] Ellos os lo han convencido de todo?
+Ellos os han comparado el hotel con el resort.
+Ha subido el precio.
+Ha subido el precio hasta cien euros.
+Nos ha subido el precio hasta cien euros.
+Ha subido que suban el equipaje.
+Tú sabes.
+[ Eso ] Tú lo sabes.
+[ Ellos ] Sabes si han subido el precio.
+Se sabe el precio.
+Ha sido sabido el precio.
+Tú sabes de eso.
+Tienes las entradas.
+Tienes de las entradas.
+Puedo confiar en ti.
+Puedo confiar a ti.
+Se confía él.
+El hotel se desentiende de la situación.
+El hotel se desentiende la situación.
+El hotel desentiende de la situación.
+El hotel desentiende la situación.
+¿Tú te relacionas con el guía?
+¿Tú relacionas con el guía?
+[ Él ] Admiraba su belleza.
+[ Él ] Se admiraba de su belleza.
+[ Él ] Admiraba de su belleza.
+[ Él ] Se admiraba su belleza.
+Has secado la toalla.
+Se ha secado la toalla.
+[ Eso ] Tú me lo sabes.
+[ Eso ] Tú me lo tienes.
+Tú me confías en él.
+El hotel se te desentiende de la situación.
+Tú te me debes relacionar con el guía.
+Te admiras de su belleza.
+Me has secado la toalla.
+La entrada puedo comprarla.
+Al encargado le has dado la entrada.
+¿ [ La entrada ] Puedo comprarla?
+¿ [ A ella ] Le has dado la entrada?
+¿ La has encontrado a ella?
+¿ Le has dado la entrada a él?
+¿ [ La entrada ] Puedo comprar?
+¿ [ A ella ] has dado la entrada?
+¿Has encontrado a ella?
+¿Has dado la entrada a él?
+¿Has encontrado al guía?
+¿Lo has encontrado al guía?
+¿Has dado la entrada al encargado?
+¿Le has dado la entrada al encargado?
+¿Qué puedo comprar?
+¿Qué puedo comprarlo?
+¿A quién has dado la entrada?
+¿A quién le has dado la entrada?
+[ El guía, ellos ]  dicen que viene.
+[ Tú ] Él dice que vienes.
+[ Él ] Viene.
+¿Tú confías en él?
+¿En él confías tú?
+¿Tú confías?
+El hotel lo queremos pagar nosotros.
+El hotel queremos pagarlo nosotros.
+El hotel lo queremos pagarlo nosotros.
+¿El hotel sabes si lo podemos pagar nosotros?
+¿El hotel lo sabes si podemos pagar nosotros?
+[ A él ] Se le han perdido los billetes.
+[ A él ] Le se han perdido los billetes.
+[ Ellos ] Me me han contratado.
+[ Ellos ] Te te han contratado.
+[ Ellos ] Me te han contratado.
+[ Ellos ] Te me han contratado.
+[ Ellos, eso, a él ] Se lo han contratado.
+[ Ellos, eso, a él ] Le lo han contratado.
+[ Ellos, eso, a ti ] Lo te han contratado.
+¿Has encontrado tú la toalla?
+¿Tú has encontrado la toalla?
+¿Le has dado la toalla a él?
+¿Le has dado a él la toalla?
+¿Le has dado tú a él la toalla?
+¿Le has dado a él tú la toalla?
+¿Le has dado a él la toalla tú?
+¿Le has dado tú la toalla a él?
+¿Le has dado la toalla tú a él?
+¿Le has dado la toalla a él tú?
+¿Has subido tú la toalla hasta la habitación?
+¿Has subido tú hasta la habitación la toalla?
+¿Has subido la toalla tú hasta la habitación?
+¿Has subido hasta la habitación tú la toalla?
+¿Has subido la toalla hasta la habitación tú?
+¿Has subido hasta la habitación la toalla tú?
+¿Qué has subido hasta la habitación?
+¿La toalla la has subido hasta la habitación?
+¿La toalla a quién se la has subido hasta la habitación?
+¿A quién la toalla se la has subido hasta la habitación?
+¿La toalla a él se la has subido hasta la habitación?
+¿A él la toalla se la has subido hasta la habitación?
+¿A quién qué has subido hasta la habitación?
+¿Qué a quién has subido hasta la habitación?

@@ -1,0 +1,29 @@
+;;; NOMINALES
+
+;;; VERBALES
+
+v-transitive-comp-rule := v-transitive-comp-c.
+v-transitive-np-rule := v-transitive-np-c.
+v-transitive-clitization-pron-rule := v-transitive-clitization-pron-c.
+v-transitive-clitization-topic-rule := v-transitive-clitization-topic-c.
+v-passive-rule := v-passive-c.
+v-rpass-rule := v-rpass-c.
+v-unergative-rule := v-unergative-c.
+v-unaccusative-rule := v-unaccusative-c.
+v-pronominal-rule := v-pronominal-c.
+v-dative-np-rule := v-dative-np-c.
+v-dative-clitization-pron-rule := v-dative-clitization-pron-c.
+v-dative-clitization-topic-rule := v-dative-clitization-topic-c.
+v-obliq-comp-rule := v-obliq-comp-c.
+v-obliq-np-rule := v-obliq-np-c.
+v-predicative-rule := v-predicative-c.
+
+;;; ORDEN DE PALABRAS
+
+inversion-rule := inversion-c.
+scrambling-rule-one := scrambling-c-one.
+scrambling-rule-two := scrambling-c-two.
+scrambling-rule-three := scrambling-c-three.
+scrambling-rule-four := scrambling-c-four.
+scrambling-rule-five := scrambling-c-five.
+scrambling-rule-six := scrambling-c-six.

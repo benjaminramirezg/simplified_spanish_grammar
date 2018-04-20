@@ -1,0 +1,228 @@
+
+;; REGLAS GRAMATICALES 
+
+comps-phrase := basic-comps-phrase & head-initial-phrase.
+
+;; UNIDADES LÉXICAS POR CATEGORÍAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; ONTOLOGÍA VERBAL ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; ESTADOS
+
+; saber 
+
+Ennss := state & 
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ PARG no-individual,
+                              CARG no-individual ]]]].
+
+; tener 
+
+Ennns := state & 
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ PARG no-individual,
+                              CARG no-individual ]]]].
+
+
+; confiar 
+
+Ennsi := state & 
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL [ HEAD.INTR yes,
+                   SEM.HOOK [ PARG no-individual,
+                              CARG no-individual ]]]].
+
+
+; acordarse
+
+Esnsi := state & 
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL [ HEAD.INTR yes,
+                   SEM.HOOK [ PARG index,
+                              CARG no-individual ]]]].
+
+
+
+; admirar 
+
+Esnss := state & 
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ PARG index,
+                              CARG no-individual ]]]].
+
+
+;;; ACTIVIDADES
+
+; comprar, calcular, decir, pagar  
+
+Annns := activity & 
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ PARG no-individual,
+                              CARG no-individual ]]]].
+
+
+; desentenderse 
+
+Asnsi := activity & 
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL [ HEAD.INTR yes,
+                   SEM.HOOK [ PARG index,
+                              CARG no-individual ]]]].
+
+
+; relacionarse 
+
+Assni := activity & 
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR yes,
+                   SEM.HOOK [ PARG index,
+                              CARG index & #index,
+                              EARG #index ]]]].
+
+;;; CAMBIOS DE ESTADO
+
+; secar 
+
+Csnnt := v-become-c &
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ IARG #arg,
+		              PARG index & #arg,
+                              CARG no-individual ]]]].
+
+; subir 
+
+Cnsnt := v-become-c &
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ CARG index & #index,
+                              IARG #index,
+                              PARG no-individual ]]]].
+
+;;; LOGROS
+
+; venir 
+
+Lnsne := achievement &
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR yes,
+                   SEM.HOOK [ CARG index & #index,
+                              IARG #index,
+                              PARG no-individual ]]]].
+
+;;; REALIZACIONES
+
+; comparar
+
+Rnsns := accomplishment &
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ CARG index & #index,
+                              IARG #index,
+                              PARG no-individual ]]]].
+
+; contratar, dar, encontrar, perder 
+
+Rnnns := accomplishment  &
+[ SYNSEM [ KEYS.OKEY null,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ PARG no-individual,
+                              CARG no-individual ]]]].
+
+; convencer 
+
+Rnnss := accomplishment  &
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL [ HEAD.INTR no,
+                   SEM.HOOK [ PARG no-individual,
+                              CARG no-individual ]]]].
+
+;;;;;;;;;;;;;;;;;;
+;;; PRONOMBRES ;;;
+;;;;;;;;;;;;;;;;;;
+
+pronoun           := lex-item &
+		     self-binded-mrs-lex-item &
+		     instance-sem-lex-item & 
+		     agree-lex-item & 
+		     non-topic-lex-item &	
+                     non-clitics-lex-item & 
+                     non-slash-lex-item & 
+[ SYNSEM.LOCAL [ HEAD det,
+		 VAL saturated ],
+  ARG-ST <> ].
+
+personal-pronoun   := lex-item &			
+			self-binded-mrs-lex-item &
+			instance-sem-lex-item & 
+			agree-lex-item &
+               		non-topic-lex-item &	
+                        non-slash-lex-item & 
+[ SYNSEM phr-synsem & [ LOCAL [ HEAD det & [ CASE.CLITIC #clitic ],
+		                VAL saturated ],
+	                NON-LOCAL.CLITICS #clitic ],
+  ARG-ST <> ].
+
+topic-trace := lex-item &			
+		      self-binded-mrs-lex-item &
+		      instance-sem-lex-item & 
+		      agree-lex-item & 
+		      non-slash-lex-item &
+[ SYNSEM unexpressed-synsem & [ LOCAL [ HEAD det & [ CASE.CLITIC #clitic ],
+					VAL saturated ],
+				NON-LOCAL.CLITICS #clitic ]].
+
+focus-trace := lex-item &			
+	      self-binded-mrs-lex-item &
+	      instance-sem-lex-item & 
+	      agree-lex-item & 
+              non-topic-lex-item &	
+              non-clitics-lex-item &
+[ SYNSEM gap-synsem & [ LOCAL [ HEAD det,
+                                VAL saturated ]]].
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;;; PP PREDICATIVOS ;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+preposition   := lex-item &
+		 norm-mrs-lex-item &
+		 active-sem-lex-item & 
+              non-topic-lex-item &   	
+              non-clitics-lex-item &
+	      non-slash-lex-item &
+[ SYNSEM.LOCAL [ HEAD adp & [ PRD yes ],
+                 VAL saturated ]].
+
+;;;;;;;;;;;;;;;;;;;;;;
+;;; COMPLEMENTIZER ;;;
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Un complementante es una unidad léxica de categoría
+;;; comp que toma una oración como único argumento
+;;; Siempre es barrera para el ascenso de clíticos
+
+basic-complementizer := lex-item & norm-hook-lex-item &
+[ SYNSEM [ NON-LOCAL.CLITICS non-append-list,
+	   LOCAL [ SEM.HOOK.INDEX event & [ I #agr ],
+		   AGR #agr,		   
+		   HEAD comp,
+		   VAL.COMPS #comps & < [ LOCAL [ HEAD verb,
+						  VAL saturated ],
+					  NON-LOCAL [ SLASH.LAST null,
+						      CLITICS.LAST null ]]> ]],
+  ARG-ST #comps ].
+
+
+;;;;;; COMPLEMENTANTE CLÁSICO: QUE, SI
+
+complementizer := basic-complementizer & 
+[ SYNSEM.LOCAL [ SEM.RELS.LIST < [ ARG0 #index ], ...>,
+		 VAL.COMPS < [ LOCAL.SEM.HOOK [ INDEX #index ]] > ]].
+

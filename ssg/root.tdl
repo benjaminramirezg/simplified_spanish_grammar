@@ -1,0 +1,4 @@
+root := sign &
+[ SYNSEM [ LOCAL [ VAL [ SUBJ null,
+		         COMPS null ]],
+	   NON-LOCAL non-local-stopper ]].

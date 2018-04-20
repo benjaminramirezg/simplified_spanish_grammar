@@ -1,0 +1,828 @@
+;;; UNIDADES LÉXICAS INVARIABLES.
+
+chunk-constant-irule := chunk-irule.
+
+;;; FLEXIÓN DE CHUNKS
+
+chunk-1-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 1, 
+                         NUM sg ]]]].
+
+chunk-1-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 1, 
+                         NUM pl ]]]].
+
+chunk-2-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 2, 
+                         NUM sg ]]]].
+
+chunk-2-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 2, 
+                         NUM pl ]]]].
+
+chunk-1-masc-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 1, 
+                         NUM sg,
+			 GEND masc ]]]].
+
+chunk-1-masc-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 1, 
+                         NUM pl,
+			 GEND masc ]]]].
+
+chunk-1-fem-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 1, 
+                         NUM sg,
+			 GEND fem ]]]].
+
+chunk-1-fem-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 1, 
+                         NUM pl,
+			 GEND fem ]]]].
+
+chunk-2-masc-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 2, 
+                         NUM sg,
+			 GEND masc ]]]].
+
+chunk-2-masc-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 2, 
+                         NUM pl,
+			 GEND masc ]]]].
+
+chunk-2-fem-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 2, 
+                         NUM sg,
+			 GEND fem ]]]].
+
+chunk-2-fem-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 2, 
+                         NUM pl,
+			 GEND fem ]]]].
+
+chunk-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 3, 
+                         NUM sg ]]]].
+
+chunk-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 3, 
+                         NUM pl ]]]].
+
+chunk-fem-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 3,
+  	                 NUM sg,
+   			 GEND fem ]]]].
+
+chunk-masc-sg-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 3,
+  	                 NUM sg,
+   			 GEND masc ]]]].
+
+chunk-fem-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 3,
+  	                 NUM pl,
+   			 GEND fem ]]]].
+
+chunk-masc-pl-irule := chunk-irule &
+[ SYNSEM [ LOCAL [ AGR [ PER 3,
+  	                 NUM pl,
+   			 GEND masc ]]]].
+;; INDICATIVO
+
+
+;; PRESENTE
+
+verb-1-sg-present-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE present ]]]].
+
+verb-2-sg-present-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE present ]]]].
+
+verb-3-sg-present-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE present ]]]].
+
+
+verb-1-pl-present-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE present ]]]].
+
+
+verb-2-pl-present-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE present ]]]].
+
+verb-3-pl-present-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE present ]]]].
+
+;; PASADO
+
+; PERFECTO
+
+verb-1-sg-past-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT perfect]]]].
+
+verb-2-sg-past-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT perfect]]]].
+
+
+verb-3-sg-past-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT perfect]]]].
+
+verb-1-pl-past-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT perfect]]]].
+
+verb-2-pl-past-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT perfect]]]].
+
+
+verb-3-pl-past-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT perfect ]]]].
+
+
+; IMPERFECTO
+
+
+verb-1-sg-imperfect-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+verb-2-sg-imperfect-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+
+verb-3-sg-imperfect-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+verb-1-pl-imperfect-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+verb-2-pl-imperfect-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+
+
+verb-3-pl-imperfect-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+
+
+;; FUTURO
+
+
+verb-1-sg-future-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE future ]]]].
+
+verb-2-sg-future-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE future ]]]].
+
+verb-3-sg-future-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE future ]]]].
+
+verb-1-pl-future-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE future ]]]].
+
+verb-2-pl-future-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE future ]]]].
+
+verb-3-pl-future-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+                                         TENSE future ]]]].
+
+;; CONDICIONAL
+
+verb-1-sg-condicional-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE conditional ]]]].
+
+verb-2-sg-condicional-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE conditional ]]]].
+
+verb-3-sg-condicional-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				      TENSE conditional ]]]].
+
+verb-1-pl-condicional-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE conditional ]]]].
+
+verb-2-pl-condicional-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE conditional ]]]].
+
+verb-3-pl-condicional-indicative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD indicative,
+				       TENSE conditional ]]]].
+
+
+;;; SUBJUNTIVO
+
+;; PRESENTE
+
+
+verb-1-sg-present-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE present ]]]].
+
+verb-3-sg-present-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE present ]]]].
+
+verb-2-sg-present-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE present ]]]].
+
+verb-1-pl-present-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE present ]]]].
+
+verb-2-pl-present-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE present ]]]].
+
+verb-3-pl-present-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE present ]]]].
+
+
+;; PASADO
+
+; IMPERFECTO
+
+verb-1-sg-imperfect-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+
+verb-2-sg-imperfect-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+
+verb-3-sg-imperfect-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+verb-1-pl-imperfect-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+verb-2-pl-imperfect-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				      TENSE past,
+				      ASPECT imperfect ]]]].
+
+
+verb-3-pl-imperfect-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+                     SEM.HOOK.INDEX.E [ MOOD subjuntive,
+					TENSE past,
+					ASPECT imperfect ]]]].
+
+
+;; FUTURO
+
+verb-1-sg-future-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    1,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE future ]]]].
+
+verb-2-sg-future-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE future ]]]].
+
+verb-3-sg-future-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE future ]]]].
+
+verb-1-pl-future-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE future ]]]].
+
+verb-2-pl-future-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE future ]]]].
+
+verb-3-pl-future-subjuntive-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    3,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD subjuntive,
+				       TENSE future ]]]].
+
+
+;;; IMPERATIVO
+
+
+verb-2-sg-present-imperative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   sg ],
+		   SEM.HOOK.INDEX.E [ MOOD imperative,
+				       TENSE present ]]]].
+
+verb-2-pl-present-imperative-irule := fin-verb-irule &
+[ SYNSEM [ LOCAL [ HEAD verb,
+		   AGR [ PER    2,
+			 GEND gend,
+			 NUM   pl ],
+		   SEM.HOOK.INDEX.E [ MOOD imperative,
+				       TENSE present ]]]].
+
+;;; FORMAS NO PERSONALES
+
+
+;;; DIFERENCIA ENTRE PARTICIPIO ACTIVO Y PASIVA !!!
+
+
+;;; Hay que hacer ambiguas las formas de participio masculino
+;;; singular: en activa no tienen rasgos, en pasiva sí. 
+;;; !!! Cambiar cuando revisemos las reglas flexivas y el 
+;;; léxico !!! Creo que no hay problema pq la concordancia
+;;; se hace siempre entre el XARG y el AGR del verbo que
+;;; concuerda. Los participios no serán nunca el verbo 
+;;; principal, no concuerdan en activa. Solo en pasiva
+;;; el auxiliar ser pedirá concordancia con el AGR del 
+;;; participio.
+
+;;; No se pone VOICE pues hay de ambos tipos (He comido, he sido comido)
+;;; Finitos, ininitivos y gerundios son .
+
+verb-inf-irule := no-fin-verb-irule & 
+[ SYNSEM.LOCAL [ HEAD verb & [ FORM inf,
+			      VOICE active ],
+		 AGR [ PER 3,
+		       GEND gend,
+		       NUM sg ]]].
+
+verb-ger-irule := no-fin-verb-irule &
+[ SYNSEM.LOCAL [ HEAD verb & [ FORM ger,
+			      VOICE active ],
+		 AGR [ PER 3,
+		       GEND gend,
+		       NUM sg ],
+		 SEM.HOOK.INDEX.E.ASPECT progressive ]].
+
+verb-part-masc-sg-irule := no-fin-verb-irule &
+[ SYNSEM.LOCAL [ HEAD verb & [ FORM part ],
+		 SEM.HOOK [ INDEX.E.ASPECT perfect ],
+		 AGR [ PER 3,
+		       GEND masc,
+		       NUM sg ]]].
+
+verb-part-masc-pl-irule := no-fin-verb-irule &
+[ SYNSEM.LOCAL [ HEAD verb & [ FORM part ],
+		 SEM.HOOK [ INDEX.E.ASPECT perfect ],
+		 AGR [ PER 3,
+		       GEND masc,
+		       NUM pl ]]].
+
+verb-part-fem-sg-irule := no-fin-verb-irule &
+[ SYNSEM.LOCAL [ HEAD verb & [ FORM part ],
+		 SEM.HOOK [ INDEX.E.ASPECT perfect],
+		 AGR [ PER 3,
+		       GEND fem,
+		       NUM sg ] ]].
+
+verb-part-fem-pl-irule := no-fin-verb-irule &
+[ SYNSEM.LOCAL [ HEAD verb & [ FORM part ],
+		 SEM.HOOK [ INDEX.E.ASPECT perfect ],
+		 AGR [ PER 3,
+		       GEND fem,
+		       NUM pl ] ]].
+;;;; CLÍTICOS
+
+;;;;;1clítico
+
+verb-me-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < [ PER 1,
+		 NUM sg ] > ].
+
+verb-te-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < [ PER 2,
+		 NUM sg ] > ].
+
+verb-te-me-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < [ PER 2,
+	                            NUM sg ], [ PER 1,
+	                                        NUM sg ] > ].
+
+;; CUIDADO
+
+verb-se-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ] > ].
+
+verb-nos-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < [ PER 1,
+		 NUM pl ] > ].
+
+verb-os-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < [ PER 2,
+		 NUM pl ] > ].
+
+verb-lo-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM sg ] > ].
+
+verb-la-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM sg ] > ].
+
+verb-le-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < dative & [ PER 3,
+			  NUM sg ] > ].
+
+verb-los-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM pl ] > ].
+
+verb-las-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM pl ] > ].
+
+verb-les-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < dative & [ PER 3,
+			  NUM pl ] > ].
+
+;;;;;2clíticos
+
+;;Conse:
+
+verb-se-me-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ], [ PER 1,
+					 NUM sg ] > ].
+
+verb-se-te-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ], [ PER 2,
+					 NUM sg ] > ].
+
+verb-se-nos-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ], [ PER 1,
+					 NUM pl ] > ].
+
+verb-se-os-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ], [ PER 2,
+					 NUM pl ] > ].
+
+verb-se-lo-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM sg ], dative & [ PER 3 ] > ].
+
+verb-se-la-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM sg ], dative & [ PER 3 ] > ].
+
+verb-se-le-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ], dative & [ PER 3,
+						  NUM sg ] > ].
+
+verb-se-los-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM pl ], dative & [ PER 3 ] > ].
+
+verb-se-las-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM pl ], dative & [ PER 3 ] > ].
+
+verb-se-les-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < nominative & [ PER 3 ], dative & [ PER 3,
+						  NUM pl ] > ].
+
+;;Comme:
+
+verb-me-la-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM sg ], dative & [ PER 1,
+						  NUM sg ] > ].
+
+verb-me-lo-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM sg ], dative & [ PER 1,
+						  NUM sg ] > ].
+
+verb-me-las-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM pl ], dative & [ PER 1,
+						  NUM sg ] > ].
+
+verb-me-los-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM pl ], dative & [ PER 1,
+						  NUM sg ] > ].
+;;Conte:
+
+
+verb-te-la-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM sg ], dative & [ PER 2,
+						  NUM sg ] > ].
+
+verb-te-lo-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM sg ], dative & [ PER 2,
+						  NUM sg ] > ].
+
+verb-te-las-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM pl ], dative & [ PER 2,
+						  NUM sg ] > ].
+
+verb-te-los-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM pl ], dative & [ PER 2,
+						  NUM sg ] > ].
+
+;;;Connos:
+
+verb-nos-la-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM sg ], dative & [ PER 1,
+						  NUM pl ] > ].
+
+verb-nos-lo-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM sg ], dative & [ PER 1,
+						  NUM pl ] > ].
+
+verb-nos-las-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM pl ], dative & [ PER 1,
+						  NUM pl ] > ].
+
+verb-nos-los-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM pl ], dative & [ PER 1,
+						  NUM pl ] > ].
+
+;;;Conos:
+
+
+verb-os-la-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM sg ], dative & [ PER 2,
+						  NUM pl ] > ].
+
+verb-os-lo-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM sg ], dative & [ PER 2,
+						  NUM pl ] > ].
+
+verb-os-las-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND fem,
+			     NUM pl ], dative & [ PER 2,
+						  NUM pl ] > ].
+
+verb-os-los-irule := clitic-verb-irule &
+[ SYNSEM.NON-LOCAL.CLITICS.LIST < accusative & [ PER 3,
+			     GEND masc,
+			     NUM pl ], dative & [ PER 2,
+						  NUM pl ] > ].
+
+verb-non-clitic-irule := non-clitic-verb.

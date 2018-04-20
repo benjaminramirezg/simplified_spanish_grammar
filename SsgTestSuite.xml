@@ -1,0 +1,3304 @@
+<?xml version='1.0' encoding='utf-8'?>
+<text>
+<segment>
+<token form="sé" from="1" to="5">
+<analysis stem="saber">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="sé"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sé"/>
+<rule class="lrule" id="v-transitive-rule" form="sé"/>
+<rule class="lrule" id="v-obliq-rule" form="sé"/>
+<rule class="lrule" id="v-unergative-rule" form="sé"/>
+</analysis>
+</token>
+<token form="cosas" from="6" to="12">
+<analysis stem="***--u***">
+<rule class="irule" id="chunk-fem-pl-irule" form="cosas"/>
+</analysis>
+</token>
+<token form="." from="12" to="14">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="sé" from="15" to="19">
+<analysis stem="saber">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="sé"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sé"/>
+<rule class="lrule" id="v-transitive-rule" form="sé"/>
+<rule class="lrule" id="v-obliq-rule" form="sé"/>
+<rule class="lrule" id="v-unergative-rule" form="sé"/>
+</analysis>
+</token>
+<token form="los precios" from="20" to="33">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-pl-irule" form="los precios"/>
+</analysis>
+</token>
+<token form="." from="33" to="35">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="sé" from="36" to="40">
+<analysis stem="saber">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="sé"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sé"/>
+<rule class="lrule" id="v-transitive-rule" form="sé"/>
+<rule class="lrule" id="v-obliq-rule" form="sé"/>
+<rule class="lrule" id="v-unergative-rule" form="sé"/>
+</analysis>
+</token>
+<token form="que" from="41" to="45">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="que"/>
+</analysis>
+</token>
+<token form="han subido" from="46" to="58">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="han subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="han subido"/>
+<rule class="lrule" id="v-transitive-rule" form="han subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="han subido"/>
+<rule class="lrule" id="v-predicative-rule" form="han subido"/>
+</analysis>
+</token>
+<token form="los precios" from="59" to="72">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-pl-irule" form="los precios"/>
+</analysis>
+</token>
+<token form="." from="72" to="74">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="sé calcular" from="75" to="89">
+<analysis stem="calcular">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="sé calcular"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sé calcular"/>
+<rule class="lrule" id="v-transitive-rule" form="sé calcular"/>
+<rule class="lrule" id="v-unergative-rule" form="sé calcular"/>
+</analysis>
+</token>
+<token form="los precios" from="90" to="103">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-pl-irule" form="los precios"/>
+</analysis>
+</token>
+<token form="." from="103" to="105">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="me acuerdo" from="106" to="118">
+<analysis stem="acordarse">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="me acuerdo"/>
+<rule class="irule" id="verb-me-irule" form="me acuerdo"/>
+<rule class="lrule" id="v-pronominal-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-dative-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-obliq-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-unergative-rule" form="me acuerdo"/>
+</analysis>
+</token>
+<token form="de cosas" from="119" to="129">
+<analysis stem="***d-u***">
+<rule class="irule" id="chunk-fem-pl-irule" form="de cosas"/>
+</analysis>
+</token>
+<token form="." from="129" to="131">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="me acuerdo" from="132" to="144">
+<analysis stem="acordarse">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="me acuerdo"/>
+<rule class="irule" id="verb-me-irule" form="me acuerdo"/>
+<rule class="lrule" id="v-pronominal-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-dative-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-obliq-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-unergative-rule" form="me acuerdo"/>
+</analysis>
+</token>
+<token form="de el precio" from="145" to="160">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="de el precio"/>
+</analysis>
+</token>
+<token form="." from="160" to="162">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="me acuerdo" from="163" to="175">
+<analysis stem="acordarse">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="me acuerdo"/>
+<rule class="irule" id="verb-me-irule" form="me acuerdo"/>
+<rule class="lrule" id="v-pronominal-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-dative-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-obliq-rule" form="me acuerdo"/>
+<rule class="lrule" id="v-unergative-rule" form="me acuerdo"/>
+</analysis>
+</token>
+<token form="de que" from="176" to="184">
+<analysis stem="***d--***">
+<rule class="irule" id="chunk-constant-irule" form="de que"/>
+</analysis>
+</token>
+<token form="ha subido" from="185" to="196">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="ha subido"/>
+</analysis>
+</token>
+<token form="el precio" from="197" to="208">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="." from="208" to="210">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="te acuerdas de subir" from="211" to="235">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="te acuerdas de subir"/>
+<rule class="irule" id="verb-te-irule" form="te acuerdas de subir"/>
+<rule class="lrule" id="v-transitive-rule" form="te acuerdas de subir"/>
+<rule class="lrule" id="v-dative-rule" form="te acuerdas de subir"/>
+<rule class="lrule" id="v-unaccusative-rule" form="te acuerdas de subir"/>
+<rule class="lrule" id="v-predicative-rule" form="te acuerdas de subir"/>
+</analysis>
+</token>
+<token form="los precios" from="236" to="249">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-pl-irule" form="los precios"/>
+</analysis>
+</token>
+<token form="?" from="249" to="251">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+<token form="a ti" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="ha contratado" from="263" to="278">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha contratado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="ha contratado"/>
+</analysis>
+</token>
+<token form="a el guía" from="279" to="293">
+<analysis stem="***ada***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el guía"/>
+</analysis>
+</token>
+<token form="." from="293" to="295">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ha sido contratado" from="296" to="317">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha sido contratado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha sido contratado"/>
+<rule class="lrule" id="v-passive-rule" form="ha sido contratado"/>
+</analysis>
+</token>
+<token form="un guía" from="318" to="328">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-sg-irule" form="un guía"/>
+</analysis>
+</token>
+<token form="." from="328" to="330">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="se han contratado" from="331" to="351">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="se han contratado"/>
+<rule class="irule" id="verb-se-irule" form="se han contratado"/>
+<rule class="lrule" id="v-rpass-rule" form="se han contratado"/>
+</analysis>
+</token>
+<token form="dos guías" from="352" to="364">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-pl-irule" form="dos guías"/>
+</analysis>
+</token>
+<token form="." from="364" to="366">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="ha contratado" from="378" to="393">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha contratado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="ha contratado"/>
+</analysis>
+</token>
+<token form="." from="393" to="395">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="ha contratado" from="414" to="429">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha contratado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="ha contratado"/>
+</analysis>
+</token>
+<token form="que" from="430" to="434">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="que"/>
+</analysis>
+</token>
+<token form="suban" from="435" to="441">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-pl-present-subjuntive-irule" form="suban"/>
+<rule class="irule" id="verb-non-clitic-irule" form="suban"/>
+<rule class="lrule" id="v-transitive-rule" form="suban"/>
+<rule class="lrule" id="v-unaccusative-rule" form="suban"/>
+<rule class="lrule" id="v-predicative-rule" form="suban"/>
+</analysis>
+</token>
+<token form="el precio" from="442" to="453">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="." from="453" to="455">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el botones" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el botones"/>
+</analysis>
+</token>
+<token form="ha subido" from="469" to="480">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="ha subido"/>
+</analysis>
+</token>
+<token form="el equipaje" from="481" to="494">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el equipaje"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="495" to="518">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="." from="518" to="520">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="han convencido" from="528" to="544">
+<analysis stem="convencer">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="han convencido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="han convencido"/>
+<rule class="lrule" id="v-transitive-rule" form="han convencido"/>
+<rule class="lrule" id="v-obliq-rule" form="han convencido"/>
+</analysis>
+</token>
+<token form="a el guía" from="545" to="559">
+<analysis stem="***ada***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el guía"/>
+</analysis>
+</token>
+<token form="de todo" from="560" to="569">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="de todo"/>
+</analysis>
+</token>
+<token form="?" from="569" to="571">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="han comparado" from="579" to="594">
+<analysis stem="comparar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="han comparado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="han comparado"/>
+<rule class="lrule" id="v-transitive-rule" form="han comparado"/>
+<rule class="lrule" id="v-predicative-rule" form="han comparado"/>
+</analysis>
+</token>
+<token form="el hotel" from="595" to="605">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="con el resort" from="606" to="622">
+<analysis stem="***cdu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="con el resort"/>
+</analysis>
+</token>
+<token form="." from="622" to="624">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="nos ha contratado" from="636" to="656">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="nos ha contratado"/>
+<rule class="irule" id="verb-nos-irule" form="nos ha contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="nos ha contratado"/>
+<rule class="lrule" id="v-dative-rule" form="nos ha contratado"/>
+</analysis>
+</token>
+<token form="un guía" from="657" to="667">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-sg-irule" form="un guía"/>
+</analysis>
+</token>
+<token form="." from="667" to="669">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a nosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-pl-irule" form="a nosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="nos ha sido contratado" from="670" to="696">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="nos ha sido contratado"/>
+<rule class="irule" id="verb-nos-irule" form="nos ha sido contratado"/>
+<rule class="lrule" id="v-passive-rule" form="nos ha sido contratado"/>
+<rule class="lrule" id="v-dative-rule" form="nos ha sido contratado"/>
+</analysis>
+</token>
+<token form="un guía" from="697" to="707">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-sg-irule" form="un guía"/>
+</analysis>
+</token>
+<token form="." from="707" to="709">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a nosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-pl-irule" form="a nosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="se nos han contratado" from="710" to="735">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="se nos han contratado"/>
+<rule class="irule" id="verb-se-nos-irule" form="se nos han contratado"/>
+<rule class="lrule" id="v-rpass-rule" form="se nos han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="se nos han contratado"/>
+</analysis>
+</token>
+<token form="dos guías" from="736" to="748">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-pl-irule" form="dos guías"/>
+</analysis>
+</token>
+<token form="." from="748" to="750">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a nosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-pl-irule" form="a nosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el botones" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el botones"/>
+</analysis>
+</token>
+<token form="os ha subido" from="764" to="779">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="os ha subido"/>
+<rule class="irule" id="verb-os-irule" form="os ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="os ha subido"/>
+<rule class="lrule" id="v-dative-rule" form="os ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="os ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="os ha subido"/>
+</analysis>
+</token>
+<token form="el equipaje" from="780" to="793">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el equipaje"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="794" to="817">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="." from="817" to="819">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a vosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-pl-irule" form="a vosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="os lo han convencido" from="836" to="860">
+<analysis stem="convencer">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="os lo han convencido"/>
+<rule class="irule" id="verb-os-lo-irule" form="os lo han convencido"/>
+<rule class="lrule" id="v-transitive-rule" form="os lo han convencido"/>
+<rule class="lrule" id="v-dative-rule" form="os lo han convencido"/>
+<rule class="lrule" id="v-obliq-rule" form="os lo han convencido"/>
+</analysis>
+</token>
+<token form="de todo" from="861" to="870">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="de todo"/>
+</analysis>
+</token>
+<token form="?" from="870" to="872">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a vosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-pl-irule" form="a vosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="os han comparado" from="880" to="899">
+<analysis stem="comparar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="os han comparado"/>
+<rule class="irule" id="verb-os-irule" form="os han comparado"/>
+<rule class="lrule" id="v-transitive-rule" form="os han comparado"/>
+<rule class="lrule" id="v-dative-rule" form="os han comparado"/>
+<rule class="lrule" id="v-predicative-rule" form="os han comparado"/>
+</analysis>
+</token>
+<token form="el hotel" from="900" to="910">
+<analysis stem="***-da***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="con el resort" from="911" to="927">
+<analysis stem="***cdu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="con el resort"/>
+</analysis>
+</token>
+<token form="." from="927" to="929">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a vosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-pl-irule" form="a vosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ha subido" from="930" to="941">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="ha subido"/>
+</analysis>
+</token>
+<token form="el precio" from="942" to="953">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="." from="953" to="955">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ha subido" from="956" to="967">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="ha subido"/>
+</analysis>
+</token>
+<token form="el precio" from="968" to="979">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="hasta cien euros" from="980" to="999">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-masc-pl-irule" form="hasta cien euros"/>
+</analysis>
+</token>
+<token form="." from="999" to="1001">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="nos ha subido" from="1002" to="1018">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="nos ha subido"/>
+<rule class="irule" id="verb-nos-irule" form="nos ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="nos ha subido"/>
+<rule class="lrule" id="v-dative-rule" form="nos ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="nos ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="nos ha subido"/>
+</analysis>
+</token>
+<token form="el precio" from="1019" to="1030">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="hasta cien euros" from="1031" to="1050">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-masc-pl-irule" form="hasta cien euros"/>
+</analysis>
+</token>
+<token form="." from="1050" to="1052">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a nosotros" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-pl-irule" form="a nosotros"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ha subido" from="1053" to="1064">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha subido"/>
+<rule class="lrule" id="v-transitive-rule" form="ha subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="ha subido"/>
+<rule class="lrule" id="v-predicative-rule" form="ha subido"/>
+</analysis>
+</token>
+<token form="que" from="1065" to="1069">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="que"/>
+</analysis>
+</token>
+<token form="suban" from="1070" to="1076">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-pl-present-subjuntive-irule" form="suban"/>
+<rule class="irule" id="verb-non-clitic-irule" form="suban"/>
+<rule class="lrule" id="v-transitive-rule" form="suban"/>
+<rule class="lrule" id="v-unaccusative-rule" form="suban"/>
+<rule class="lrule" id="v-predicative-rule" form="suban"/>
+</analysis>
+</token>
+<token form="el equipaje" from="1077" to="1090">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el equipaje"/>
+</analysis>
+</token>
+<token form="." from="1090" to="1092">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="sabes" from="1098" to="1104">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="sabes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="sabes"/>
+</analysis>
+</token>
+<token form="." from="1104" to="1106">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="eso" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="eso"/>
+</analysis>
+</token>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="lo sabes" from="1117" to="1127">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="lo sabes"/>
+<rule class="irule" id="verb-lo-irule" form="lo sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="lo sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="lo sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="lo sabes"/>
+</analysis>
+</token>
+<token form="." from="1127" to="1129">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="sabes" from="1137" to="1143">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="sabes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="sabes"/>
+</analysis>
+</token>
+<token form="si" from="1144" to="1147">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="si"/>
+</analysis>
+</token>
+<token form="han subido" from="1148" to="1160">
+<analysis stem="subir">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="han subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="han subido"/>
+<rule class="lrule" id="v-transitive-rule" form="han subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="han subido"/>
+<rule class="lrule" id="v-predicative-rule" form="han subido"/>
+</analysis>
+</token>
+<token form="el precio" from="1161" to="1172">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="." from="1172" to="1174">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="se sabe" from="1175" to="1184">
+<analysis stem="saber">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="se sabe"/>
+<rule class="irule" id="verb-se-irule" form="se sabe"/>
+<rule class="lrule" id="v-rpass-rule" form="se sabe"/>
+</analysis>
+</token>
+<token form="el precio" from="1185" to="1196">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="." from="1196" to="1198">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ha sido sabido" from="1199" to="1216">
+<analysis stem="saber">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="ha sido sabido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="ha sido sabido"/>
+<rule class="lrule" id="v-transitive-rule" form="ha sido sabido"/>
+<rule class="lrule" id="v-obliq-rule" form="ha sido sabido"/>
+<rule class="lrule" id="v-unergative-rule" form="ha sido sabido"/>
+</analysis>
+</token>
+<token form="el precio" from="1217" to="1228">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el precio"/>
+</analysis>
+</token>
+<token form="." from="1228" to="1230">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="sabes" from="1236" to="1242">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="sabes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="sabes"/>
+</analysis>
+</token>
+<token form="de eso" from="1243" to="1251">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="de eso"/>
+</analysis>
+</token>
+<token form="." from="1251" to="1253">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tienes" from="1254" to="1261">
+<analysis stem="tener">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="tienes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="tienes"/>
+<rule class="lrule" id="v-transitive-rule" form="tienes"/>
+<rule class="lrule" id="v-unergative-rule" form="tienes"/>
+</analysis>
+</token>
+<token form="las entradas" from="1262" to="1276">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-pl-irule" form="las entradas"/>
+</analysis>
+</token>
+<token form="." from="1276" to="1278">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tienes" from="1279" to="1286">
+<analysis stem="tener">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="tienes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="tienes"/>
+<rule class="lrule" id="v-transitive-rule" form="tienes"/>
+<rule class="lrule" id="v-unergative-rule" form="tienes"/>
+</analysis>
+</token>
+<token form="de las entradas" from="1287" to="1305">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-pl-irule" form="de las entradas"/>
+</analysis>
+</token>
+<token form="." from="1305" to="1307">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="puedo confiar" from="1308" to="1323">
+<analysis stem="confiar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo confiar"/>
+<rule class="irule" id="verb-non-clitic-irule" form="puedo confiar"/>
+<rule class="lrule" id="v-obliq-rule" form="puedo confiar"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo confiar"/>
+</analysis>
+</token>
+<token form="en ti" from="1324" to="1331">
+<analysis stem="***epa***">
+<rule class="irule" id="chunk-2-sg-irule" form="en ti"/>
+</analysis>
+</token>
+<token form="." from="1331" to="1333">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="puedo confiar" from="1334" to="1349">
+<analysis stem="confiar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo confiar"/>
+<rule class="irule" id="verb-non-clitic-irule" form="puedo confiar"/>
+<rule class="lrule" id="v-obliq-rule" form="puedo confiar"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo confiar"/>
+</analysis>
+</token>
+<token form="a ti" from="1350" to="1357">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+<token form="." from="1357" to="1359">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="se confía" from="1360" to="1372">
+<analysis stem="confiar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="se confía"/>
+<rule class="irule" id="verb-se-irule" form="se confía"/>
+<rule class="lrule" id="v-obliq-rule" form="se confía"/>
+<rule class="lrule" id="v-unergative-rule" form="se confía"/>
+</analysis>
+</token>
+<token form="él" from="1373" to="1377">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="." from="1377" to="1379">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="se desentiende" from="1391" to="1407">
+<analysis stem="desentenderse">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="se desentiende"/>
+<rule class="irule" id="verb-se-irule" form="se desentiende"/>
+<rule class="lrule" id="v-pronominal-rule" form="se desentiende"/>
+<rule class="lrule" id="v-obliq-rule" form="se desentiende"/>
+<rule class="lrule" id="v-unergative-rule" form="se desentiende"/>
+</analysis>
+</token>
+<token form="de la situación" from="1408" to="1427">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="de la situación"/>
+</analysis>
+</token>
+<token form="." from="1427" to="1429">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="se desentiende" from="1441" to="1457">
+<analysis stem="desentenderse">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="se desentiende"/>
+<rule class="irule" id="verb-se-irule" form="se desentiende"/>
+<rule class="lrule" id="v-pronominal-rule" form="se desentiende"/>
+<rule class="lrule" id="v-obliq-rule" form="se desentiende"/>
+<rule class="lrule" id="v-unergative-rule" form="se desentiende"/>
+</analysis>
+</token>
+<token form="la situación" from="1458" to="1473">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la situación"/>
+</analysis>
+</token>
+<token form="." from="1473" to="1475">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="desentiende" from="1487" to="1499">
+<analysis stem="desentenderse">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="desentiende"/>
+<rule class="irule" id="verb-non-clitic-irule" form="desentiende"/>
+<rule class="lrule" id="v-pronominal-rule" form="desentiende"/>
+<rule class="lrule" id="v-obliq-rule" form="desentiende"/>
+<rule class="lrule" id="v-unergative-rule" form="desentiende"/>
+</analysis>
+</token>
+<token form="de la situación" from="1500" to="1519">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="de la situación"/>
+</analysis>
+</token>
+<token form="." from="1519" to="1521">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="desentiende" from="1533" to="1545">
+<analysis stem="desentenderse">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="desentiende"/>
+<rule class="irule" id="verb-non-clitic-irule" form="desentiende"/>
+<rule class="lrule" id="v-pronominal-rule" form="desentiende"/>
+<rule class="lrule" id="v-obliq-rule" form="desentiende"/>
+<rule class="lrule" id="v-unergative-rule" form="desentiende"/>
+</analysis>
+</token>
+<token form="la situación" from="1546" to="1561">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la situación"/>
+</analysis>
+</token>
+<token form="." from="1561" to="1563">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="te relacionas" from="1569" to="1584">
+<analysis stem="relacionarse">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="te relacionas"/>
+<rule class="irule" id="verb-te-irule" form="te relacionas"/>
+<rule class="lrule" id="v-pronominal-rule" form="te relacionas"/>
+<rule class="lrule" id="v-dative-rule" form="te relacionas"/>
+<rule class="lrule" id="v-unergative-rule" form="te relacionas"/>
+<rule class="lrule" id="v-predicative-rule" form="te relacionas"/>
+</analysis>
+</token>
+<token form="con el guía" from="1585" to="1600">
+<analysis stem="***cda***">
+<rule class="irule" id="chunk-masc-sg-irule" form="con el guía"/>
+</analysis>
+</token>
+<token form="?" from="1600" to="1602">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="relacionas" from="1608" to="1619">
+<analysis stem="relacionarse">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="relacionas"/>
+<rule class="irule" id="verb-non-clitic-irule" form="relacionas"/>
+<rule class="lrule" id="v-pronominal-rule" form="relacionas"/>
+<rule class="lrule" id="v-unergative-rule" form="relacionas"/>
+<rule class="lrule" id="v-predicative-rule" form="relacionas"/>
+</analysis>
+</token>
+<token form="con el guía" from="1620" to="1635">
+<analysis stem="***cda***">
+<rule class="irule" id="chunk-masc-sg-irule" form="con el guía"/>
+</analysis>
+</token>
+<token form="?" from="1635" to="1637">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="él" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="admiraba" from="1643" to="1652">
+<analysis stem="admirar">
+<rule class="irule" id="verb-3-sg-imperfect-indicative-irule" form="admiraba"/>
+<rule class="irule" id="verb-non-clitic-irule" form="admiraba"/>
+<rule class="lrule" id="v-pronominal-rule" form="admiraba"/>
+<rule class="lrule" id="v-transitive-rule" form="admiraba"/>
+<rule class="lrule" id="v-obliq-rule" form="admiraba"/>
+<rule class="lrule" id="v-unergative-rule" form="admiraba"/>
+</analysis>
+</token>
+<token form="su belleza" from="1653" to="1665">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="su belleza"/>
+</analysis>
+</token>
+<token form="." from="1665" to="1667">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="él" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="se admiraba" from="1673" to="1686">
+<analysis stem="admirar">
+<rule class="irule" id="verb-3-sg-imperfect-indicative-irule" form="se admiraba"/>
+<rule class="irule" id="verb-se-irule" form="se admiraba"/>
+<rule class="lrule" id="v-pronominal-rule" form="se admiraba"/>
+<rule class="lrule" id="v-transitive-rule" form="se admiraba"/>
+<rule class="lrule" id="v-obliq-rule" form="se admiraba"/>
+<rule class="lrule" id="v-unergative-rule" form="se admiraba"/>
+</analysis>
+</token>
+<token form="de su belleza" from="1687" to="1703">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="de su belleza"/>
+</analysis>
+</token>
+<token form="." from="1703" to="1705">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="él" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="admiraba" from="1711" to="1720">
+<analysis stem="admirar">
+<rule class="irule" id="verb-3-sg-imperfect-indicative-irule" form="admiraba"/>
+<rule class="irule" id="verb-non-clitic-irule" form="admiraba"/>
+<rule class="lrule" id="v-pronominal-rule" form="admiraba"/>
+<rule class="lrule" id="v-transitive-rule" form="admiraba"/>
+<rule class="lrule" id="v-obliq-rule" form="admiraba"/>
+<rule class="lrule" id="v-unergative-rule" form="admiraba"/>
+</analysis>
+</token>
+<token form="de su belleza" from="1721" to="1737">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="de su belleza"/>
+</analysis>
+</token>
+<token form="." from="1737" to="1739">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="él" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="se admiraba" from="1745" to="1758">
+<analysis stem="admirar">
+<rule class="irule" id="verb-3-sg-imperfect-indicative-irule" form="se admiraba"/>
+<rule class="irule" id="verb-se-irule" form="se admiraba"/>
+<rule class="lrule" id="v-pronominal-rule" form="se admiraba"/>
+<rule class="lrule" id="v-transitive-rule" form="se admiraba"/>
+<rule class="lrule" id="v-obliq-rule" form="se admiraba"/>
+<rule class="lrule" id="v-unergative-rule" form="se admiraba"/>
+</analysis>
+</token>
+<token form="su belleza" from="1759" to="1771">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="su belleza"/>
+</analysis>
+</token>
+<token form="." from="1771" to="1773">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has secado" from="1774" to="1786">
+<analysis stem="secar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has secado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has secado"/>
+<rule class="lrule" id="v-pronominal-rule" form="has secado"/>
+<rule class="lrule" id="v-transitive-rule" form="has secado"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has secado"/>
+</analysis>
+</token>
+<token form="la toalla" from="1787" to="1798">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="." from="1798" to="1800">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="se ha secado" from="1801" to="1816">
+<analysis stem="secar">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="se ha secado"/>
+<rule class="irule" id="verb-se-irule" form="se ha secado"/>
+<rule class="lrule" id="v-pronominal-rule" form="se ha secado"/>
+<rule class="lrule" id="v-transitive-rule" form="se ha secado"/>
+<rule class="lrule" id="v-unaccusative-rule" form="se ha secado"/>
+</analysis>
+</token>
+<token form="la toalla" from="1817" to="1828">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="." from="1828" to="1830">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="eso" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="eso"/>
+</analysis>
+</token>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="me lo sabes" from="1841" to="1855">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="me lo sabes"/>
+<rule class="irule" id="verb-me-lo-irule" form="me lo sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="me lo sabes"/>
+<rule class="lrule" id="v-dative-rule" form="me lo sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="me lo sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="me lo sabes"/>
+</analysis>
+</token>
+<token form="." from="1855" to="1857">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="eso" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="eso"/>
+</analysis>
+</token>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="me lo tienes" from="1868" to="1883">
+<analysis stem="tener">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="me lo tienes"/>
+<rule class="irule" id="verb-me-lo-irule" form="me lo tienes"/>
+<rule class="lrule" id="v-transitive-rule" form="me lo tienes"/>
+<rule class="lrule" id="v-dative-rule" form="me lo tienes"/>
+<rule class="lrule" id="v-unergative-rule" form="me lo tienes"/>
+</analysis>
+</token>
+<token form="." from="1883" to="1885">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="me confías" from="1891" to="1904">
+<analysis stem="confiar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="me confías"/>
+<rule class="irule" id="verb-me-irule" form="me confías"/>
+<rule class="lrule" id="v-dative-rule" form="me confías"/>
+<rule class="lrule" id="v-obliq-rule" form="me confías"/>
+<rule class="lrule" id="v-unergative-rule" form="me confías"/>
+</analysis>
+</token>
+<token form="en él" from="1905" to="1913">
+<analysis stem="***epa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="en él"/>
+</analysis>
+</token>
+<token form="." from="1913" to="1915">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="se te desentiende" from="1927" to="1947">
+<analysis stem="desentenderse">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="se te desentiende"/>
+<rule class="irule" id="verb-se-te-irule" form="se te desentiende"/>
+<rule class="lrule" id="v-pronominal-rule" form="se te desentiende"/>
+<rule class="lrule" id="v-dative-rule" form="se te desentiende"/>
+<rule class="lrule" id="v-obliq-rule" form="se te desentiende"/>
+<rule class="lrule" id="v-unergative-rule" form="se te desentiende"/>
+</analysis>
+</token>
+<token form="de la situación" from="1948" to="1967">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="de la situación"/>
+</analysis>
+</token>
+<token form="." from="1967" to="1969">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a ti" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="te me debes relacionar" from="1975" to="2001">
+<analysis stem="relacionarse">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="te me debes relacionar"/>
+<rule class="irule" id="verb-te-me-irule" form="te me debes relacionar"/>
+<rule class="lrule" id="v-pronominal-rule" form="te me debes relacionar"/>
+<rule class="lrule" id="v-dative-rule" form="te me debes relacionar"/>
+<rule class="lrule" id="v-unergative-rule" form="te me debes relacionar"/>
+<rule class="lrule" id="v-predicative-rule" form="te me debes relacionar"/>
+</analysis>
+</token>
+<token form="con el guía" from="2002" to="2017">
+<analysis stem="***cda***">
+<rule class="irule" id="chunk-masc-sg-irule" form="con el guía"/>
+</analysis>
+</token>
+<token form="." from="2017" to="2019">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="te admiras" from="2020" to="2032">
+<analysis stem="admirar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="te admiras"/>
+<rule class="irule" id="verb-te-irule" form="te admiras"/>
+<rule class="lrule" id="v-pronominal-rule" form="te admiras"/>
+<rule class="lrule" id="v-transitive-rule" form="te admiras"/>
+<rule class="lrule" id="v-dative-rule" form="te admiras"/>
+<rule class="lrule" id="v-obliq-rule" form="te admiras"/>
+<rule class="lrule" id="v-unergative-rule" form="te admiras"/>
+</analysis>
+</token>
+<token form="de su belleza" from="2033" to="2049">
+<analysis stem="***ddu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="de su belleza"/>
+</analysis>
+</token>
+<token form="." from="2049" to="2051">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="me has secado" from="2052" to="2068">
+<analysis stem="secar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="me has secado"/>
+<rule class="irule" id="verb-me-irule" form="me has secado"/>
+<rule class="lrule" id="v-pronominal-rule" form="me has secado"/>
+<rule class="lrule" id="v-transitive-rule" form="me has secado"/>
+<rule class="lrule" id="v-dative-rule" form="me has secado"/>
+<rule class="lrule" id="v-unaccusative-rule" form="me has secado"/>
+</analysis>
+</token>
+<token form="la toalla" from="2069" to="2080">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="." from="2080" to="2082">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la entrada" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="puedo comprarla" from="2096" to="2113">
+<analysis stem="comprar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo comprarla"/>
+<rule class="irule" id="verb-la-irule" form="puedo comprarla"/>
+<rule class="lrule" id="v-transitive-rule" form="puedo comprarla"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo comprarla"/>
+</analysis>
+</token>
+<token form="." from="2113" to="2115">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a el encargado" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el encargado"/>
+</analysis>
+</token>
+<token form="le has dado" from="2135" to="2149">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2150" to="2162">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="." from="2162" to="2164">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la entrada" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="puedo comprarla" from="2178" to="2195">
+<analysis stem="comprar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo comprarla"/>
+<rule class="irule" id="verb-la-irule" form="puedo comprarla"/>
+<rule class="lrule" id="v-transitive-rule" form="puedo comprarla"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo comprarla"/>
+</analysis>
+</token>
+<token form="?" from="2195" to="2197">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a ella" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-fem-sg-irule" form="a ella"/>
+</analysis>
+</token>
+<token form="le has dado" from="2208" to="2222">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2223" to="2235">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="?" from="2235" to="2237">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la has encontrado" from="2238" to="2258">
+<analysis stem="encontrar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="la has encontrado"/>
+<rule class="irule" id="verb-la-irule" form="la has encontrado"/>
+<rule class="lrule" id="v-transitive-rule" form="la has encontrado"/>
+</analysis>
+</token>
+<token form="a ella" from="2259" to="2268">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-fem-sg-irule" form="a ella"/>
+</analysis>
+</token>
+<token form="?" from="2268" to="2270">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="2271" to="2285">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2286" to="2298">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="a él" from="2299" to="2307">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="?" from="2307" to="2309">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la entrada" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="puedo comprar" from="2323" to="2338">
+<analysis stem="comprar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo comprar"/>
+<rule class="irule" id="verb-non-clitic-irule" form="puedo comprar"/>
+<rule class="lrule" id="v-transitive-rule" form="puedo comprar"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo comprar"/>
+</analysis>
+</token>
+<token form="?" from="2338" to="2340">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a ella" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-fem-sg-irule" form="a ella"/>
+</analysis>
+</token>
+<token form="has dado" from="2351" to="2361">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has dado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="has dado"/>
+<rule class="lrule" id="v-dative-rule" form="has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2362" to="2374">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="?" from="2374" to="2376">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has encontrado" from="2377" to="2393">
+<analysis stem="encontrar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has encontrado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has encontrado"/>
+<rule class="lrule" id="v-transitive-rule" form="has encontrado"/>
+</analysis>
+</token>
+<token form="a ella" from="2394" to="2403">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-fem-sg-irule" form="a ella"/>
+</analysis>
+</token>
+<token form="?" from="2403" to="2405">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has dado" from="2406" to="2416">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has dado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="has dado"/>
+<rule class="lrule" id="v-dative-rule" form="has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2417" to="2429">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="a él" from="2430" to="2438">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="?" from="2438" to="2440">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has encontrado" from="2441" to="2457">
+<analysis stem="encontrar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has encontrado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has encontrado"/>
+<rule class="lrule" id="v-transitive-rule" form="has encontrado"/>
+</analysis>
+</token>
+<token form="a el guía" from="2458" to="2472">
+<analysis stem="***ada***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el guía"/>
+</analysis>
+</token>
+<token form="?" from="2472" to="2474">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="lo has encontrado" from="2475" to="2495">
+<analysis stem="encontrar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="lo has encontrado"/>
+<rule class="irule" id="verb-lo-irule" form="lo has encontrado"/>
+<rule class="lrule" id="v-transitive-rule" form="lo has encontrado"/>
+</analysis>
+</token>
+<token form="a el guía" from="2496" to="2510">
+<analysis stem="***ada***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el guía"/>
+</analysis>
+</token>
+<token form="?" from="2510" to="2512">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has dado" from="2513" to="2523">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has dado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="has dado"/>
+<rule class="lrule" id="v-dative-rule" form="has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2524" to="2536">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="a el encargado" from="2537" to="2555">
+<analysis stem="***ada***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el encargado"/>
+</analysis>
+</token>
+<token form="?" from="2555" to="2557">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="2558" to="2572">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2573" to="2585">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="a el encargado" from="2586" to="2604">
+<analysis stem="***ada***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a el encargado"/>
+</analysis>
+</token>
+<token form="?" from="2604" to="2606">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="qué" from="Z" to="Z">
+<analysis stem="***-Qu***">
+<rule class="irule" id="chunk-sg-irule" form="qué"/>
+</analysis>
+</token>
+<token form="puedo comprar" from="2613" to="2628">
+<analysis stem="comprar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo comprar"/>
+<rule class="irule" id="verb-non-clitic-irule" form="puedo comprar"/>
+<rule class="lrule" id="v-transitive-rule" form="puedo comprar"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo comprar"/>
+</analysis>
+</token>
+<token form="?" from="2628" to="2630">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="qué" from="Z" to="Z">
+<analysis stem="***-Qu***">
+<rule class="irule" id="chunk-sg-irule" form="qué"/>
+</analysis>
+</token>
+<token form="puedo comprarlo" from="2637" to="2654">
+<analysis stem="comprar">
+<rule class="irule" id="verb-1-sg-present-indicative-irule" form="puedo comprarlo"/>
+<rule class="irule" id="verb-lo-irule" form="puedo comprarlo"/>
+<rule class="lrule" id="v-transitive-rule" form="puedo comprarlo"/>
+<rule class="lrule" id="v-unergative-rule" form="puedo comprarlo"/>
+</analysis>
+</token>
+<token form="?" from="2654" to="2656">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="yo" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-1-sg-irule" form="yo"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a quién" from="Z" to="Z">
+<analysis stem="***aQa***">
+<rule class="irule" id="chunk-sg-irule" form="a quién"/>
+</analysis>
+</token>
+<token form="has dado" from="2669" to="2679">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has dado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="has dado"/>
+<rule class="lrule" id="v-dative-rule" form="has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2680" to="2692">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="?" from="2692" to="2694">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a quién" from="Z" to="Z">
+<analysis stem="***aQa***">
+<rule class="irule" id="chunk-sg-irule" form="a quién"/>
+</analysis>
+</token>
+<token form="le has dado" from="2707" to="2721">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la entrada" from="2722" to="2734">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la entrada"/>
+</analysis>
+</token>
+<token form="?" from="2734" to="2736">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el guía" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el guía"/>
+</analysis>
+</token>
+<token form="," from="2747" to="2749">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="dicen" from="2757" to="2763">
+<analysis stem="decir">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="dicen"/>
+<rule class="irule" id="verb-non-clitic-irule" form="dicen"/>
+<rule class="lrule" id="v-transitive-rule" form="dicen"/>
+<rule class="lrule" id="v-unergative-rule" form="dicen"/>
+</analysis>
+</token>
+<token form="que" from="2764" to="2768">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="que"/>
+</analysis>
+</token>
+<token form="viene" from="2769" to="2775">
+<analysis stem="venir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="viene"/>
+<rule class="irule" id="verb-non-clitic-irule" form="viene"/>
+<rule class="lrule" id="v-unaccusative-rule" form="viene"/>
+<rule class="lrule" id="v-predicative-rule" form="viene"/>
+</analysis>
+</token>
+<token form="." from="2775" to="2777">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="él" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="dice" from="2788" to="2793">
+<analysis stem="decir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="dice"/>
+<rule class="irule" id="verb-non-clitic-irule" form="dice"/>
+<rule class="lrule" id="v-transitive-rule" form="dice"/>
+<rule class="lrule" id="v-unergative-rule" form="dice"/>
+</analysis>
+</token>
+<token form="que" from="2794" to="2798">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="que"/>
+</analysis>
+</token>
+<token form="vienes" from="2799" to="2806">
+<analysis stem="venir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="vienes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="vienes"/>
+<rule class="lrule" id="v-unaccusative-rule" form="vienes"/>
+<rule class="lrule" id="v-predicative-rule" form="vienes"/>
+</analysis>
+</token>
+<token form="." from="2806" to="2808">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="él" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="él"/>
+</analysis>
+</token>
+<token form="viene" from="2814" to="2820">
+<analysis stem="venir">
+<rule class="irule" id="verb-3-sg-present-indicative-irule" form="viene"/>
+<rule class="irule" id="verb-non-clitic-irule" form="viene"/>
+<rule class="lrule" id="v-unaccusative-rule" form="viene"/>
+<rule class="lrule" id="v-predicative-rule" form="viene"/>
+</analysis>
+</token>
+<token form="." from="2820" to="2822">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="confías" from="2828" to="2837">
+<analysis stem="confiar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="confías"/>
+<rule class="irule" id="verb-non-clitic-irule" form="confías"/>
+<rule class="lrule" id="v-obliq-rule" form="confías"/>
+<rule class="lrule" id="v-unergative-rule" form="confías"/>
+</analysis>
+</token>
+<token form="en él" from="2838" to="2846">
+<analysis stem="***epa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="en él"/>
+</analysis>
+</token>
+<token form="?" from="2846" to="2848">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="en él" from="Z" to="Z">
+<analysis stem="***eTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="en él"/>
+</analysis>
+</token>
+<token form="confías" from="2858" to="2867">
+<analysis stem="confiar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="confías"/>
+<rule class="irule" id="verb-non-clitic-irule" form="confías"/>
+<rule class="lrule" id="v-obliq-rule" form="confías"/>
+<rule class="lrule" id="v-unergative-rule" form="confías"/>
+</analysis>
+</token>
+<token form="tú" from="2868" to="2872">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="?" from="2872" to="2874">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="confías" from="2880" to="2889">
+<analysis stem="confiar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="confías"/>
+<rule class="irule" id="verb-non-clitic-irule" form="confías"/>
+<rule class="lrule" id="v-obliq-rule" form="confías"/>
+<rule class="lrule" id="v-unergative-rule" form="confías"/>
+</analysis>
+</token>
+<token form="?" from="2889" to="2891">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="lo queremos pagar" from="2903" to="2923">
+<analysis stem="pagar">
+<rule class="irule" id="verb-1-pl-present-indicative-irule" form="lo queremos pagar"/>
+<rule class="irule" id="verb-lo-irule" form="lo queremos pagar"/>
+<rule class="lrule" id="v-transitive-rule" form="lo queremos pagar"/>
+<rule class="lrule" id="v-unergative-rule" form="lo queremos pagar"/>
+</analysis>
+</token>
+<token form="nosotros" from="2924" to="2933">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-1-pl-irule" form="nosotros"/>
+</analysis>
+</token>
+<token form="." from="2933" to="2935">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="queremos pagarlo" from="2947" to="2965">
+<analysis stem="pagar">
+<rule class="irule" id="verb-1-pl-present-indicative-irule" form="queremos pagarlo"/>
+<rule class="irule" id="verb-lo-irule" form="queremos pagarlo"/>
+<rule class="lrule" id="v-transitive-rule" form="queremos pagarlo"/>
+<rule class="lrule" id="v-unergative-rule" form="queremos pagarlo"/>
+</analysis>
+</token>
+<token form="nosotros" from="2966" to="2975">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-1-pl-irule" form="nosotros"/>
+</analysis>
+</token>
+<token form="." from="2975" to="2977">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="lo queremos pagarlo" from="2989" to="3011">
+<analysis stem="pagar">
+<rule class="irule" id="verb-1-pl-present-indicative-irule" form="lo queremos pagarlo"/>
+<rule class="irule" id="verb-lo-lo-irule" form="lo queremos pagarlo"/>
+<rule class="lrule" id="v-transitive-rule" form="lo queremos pagarlo"/>
+<rule class="lrule" id="v-unergative-rule" form="lo queremos pagarlo"/>
+</analysis>
+</token>
+<token form="nosotros" from="3012" to="3021">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-1-pl-irule" form="nosotros"/>
+</analysis>
+</token>
+<token form="." from="3021" to="3023">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="sabes" from="3035" to="3041">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="sabes"/>
+<rule class="irule" id="verb-non-clitic-irule" form="sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="sabes"/>
+</analysis>
+</token>
+<token form="si" from="3042" to="3045">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="si"/>
+</analysis>
+</token>
+<token form="lo podemos pagar" from="3046" to="3065">
+<analysis stem="pagar">
+<rule class="irule" id="verb-1-pl-present-indicative-irule" form="lo podemos pagar"/>
+<rule class="irule" id="verb-lo-irule" form="lo podemos pagar"/>
+<rule class="lrule" id="v-transitive-rule" form="lo podemos pagar"/>
+<rule class="lrule" id="v-unergative-rule" form="lo podemos pagar"/>
+</analysis>
+</token>
+<token form="nosotros" from="3066" to="3075">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-1-pl-irule" form="nosotros"/>
+</analysis>
+</token>
+<token form="?" from="3075" to="3077">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="el hotel" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-sg-irule" form="el hotel"/>
+</analysis>
+</token>
+<token form="lo sabes" from="3089" to="3099">
+<analysis stem="saber">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="lo sabes"/>
+<rule class="irule" id="verb-lo-irule" form="lo sabes"/>
+<rule class="lrule" id="v-transitive-rule" form="lo sabes"/>
+<rule class="lrule" id="v-obliq-rule" form="lo sabes"/>
+<rule class="lrule" id="v-unergative-rule" form="lo sabes"/>
+</analysis>
+</token>
+<token form="si" from="3100" to="3103">
+<analysis stem="***---***">
+<rule class="irule" id="chunk-constant-irule" form="si"/>
+</analysis>
+</token>
+<token form="podemos pagar" from="3104" to="3119">
+<analysis stem="pagar">
+<rule class="irule" id="verb-1-pl-present-indicative-irule" form="podemos pagar"/>
+<rule class="irule" id="verb-non-clitic-irule" form="podemos pagar"/>
+<rule class="lrule" id="v-transitive-rule" form="podemos pagar"/>
+<rule class="lrule" id="v-unergative-rule" form="podemos pagar"/>
+</analysis>
+</token>
+<token form="nosotros" from="3120" to="3129">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-1-pl-irule" form="nosotros"/>
+</analysis>
+</token>
+<token form="?" from="3129" to="3131">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="se le han perdido" from="3141" to="3162">
+<analysis stem="perder">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="se le han perdido"/>
+<rule class="irule" id="verb-se-le-irule" form="se le han perdido"/>
+<rule class="lrule" id="v-rpass-rule" form="se le han perdido"/>
+<rule class="lrule" id="v-dative-rule" form="se le han perdido"/>
+</analysis>
+</token>
+<token form="los billetes" from="3163" to="3177">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-pl-irule" form="los billetes"/>
+</analysis>
+</token>
+<token form="." from="3177" to="3179">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="le se han perdido" from="3189" to="3210">
+<analysis stem="perder">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="le se han perdido"/>
+<rule class="irule" id="verb-le-se-irule" form="le se han perdido"/>
+<rule class="lrule" id="v-rpass-rule" form="le se han perdido"/>
+<rule class="lrule" id="v-dative-rule" form="le se han perdido"/>
+</analysis>
+</token>
+<token form="los billetes" from="3211" to="3225">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-masc-pl-irule" form="los billetes"/>
+</analysis>
+</token>
+<token form="." from="3225" to="3227">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="me me han contratado" from="3235" to="3259">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="me me han contratado"/>
+<rule class="irule" id="verb-me-me-irule" form="me me han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="me me han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="me me han contratado"/>
+</analysis>
+</token>
+<token form="." from="3259" to="3261">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="te te han contratado" from="3269" to="3293">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="te te han contratado"/>
+<rule class="irule" id="verb-te-te-irule" form="te te han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="te te han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="te te han contratado"/>
+</analysis>
+</token>
+<token form="." from="3293" to="3295">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a ti" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="me te han contratado" from="3303" to="3327">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="me te han contratado"/>
+<rule class="irule" id="verb-me-te-irule" form="me te han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="me te han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="me te han contratado"/>
+</analysis>
+</token>
+<token form="." from="3327" to="3329">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+<token form="a ti" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="te me han contratado" from="3337" to="3361">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="te me han contratado"/>
+<rule class="irule" id="verb-te-me-irule" form="te me han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="te me han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="te me han contratado"/>
+</analysis>
+</token>
+<token form="." from="3361" to="3363">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a mí" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-1-sg-irule" form="a mí"/>
+</analysis>
+</token>
+<token form="a ti" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="," from="3370" to="3372">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="eso" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="eso"/>
+</analysis>
+</token>
+<token form="," from="3377" to="3379">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="se lo han contratado" from="3389" to="3413">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="se lo han contratado"/>
+<rule class="irule" id="verb-se-lo-irule" form="se lo han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="se lo han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="se lo han contratado"/>
+</analysis>
+</token>
+<token form="." from="3413" to="3415">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="," from="3422" to="3424">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="eso" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="eso"/>
+</analysis>
+</token>
+<token form="," from="3429" to="3431">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="le lo han contratado" from="3441" to="3465">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="le lo han contratado"/>
+<rule class="irule" id="verb-le-lo-irule" form="le lo han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="le lo han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="le lo han contratado"/>
+</analysis>
+</token>
+<token form="." from="3465" to="3467">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="ellos" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-masc-pl-irule" form="ellos"/>
+</analysis>
+</token>
+<token form="," from="3474" to="3476">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="eso" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-masc-sg-irule" form="eso"/>
+</analysis>
+</token>
+<token form="," from="3481" to="3483">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="a ti" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-2-sg-irule" form="a ti"/>
+</analysis>
+</token>
+<token form="lo te han contratado" from="3492" to="3516">
+<analysis stem="contratar">
+<rule class="irule" id="verb-3-pl-present-indicative-irule" form="lo te han contratado"/>
+<rule class="irule" id="verb-lo-te-irule" form="lo te han contratado"/>
+<rule class="lrule" id="v-transitive-rule" form="lo te han contratado"/>
+<rule class="lrule" id="v-dative-rule" form="lo te han contratado"/>
+</analysis>
+</token>
+<token form="." from="3516" to="3518">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has encontrado" from="3519" to="3535">
+<analysis stem="encontrar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has encontrado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has encontrado"/>
+<rule class="lrule" id="v-transitive-rule" form="has encontrado"/>
+</analysis>
+</token>
+<token form="tú" from="3536" to="3540">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="la toalla" from="3541" to="3552">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="3552" to="3554">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="tú" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="has encontrado" from="3560" to="3576">
+<analysis stem="encontrar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has encontrado"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has encontrado"/>
+<rule class="lrule" id="v-transitive-rule" form="has encontrado"/>
+</analysis>
+</token>
+<token form="la toalla" from="3577" to="3588">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="3588" to="3590">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3591" to="3605">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la toalla" from="3606" to="3617">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="a él" from="3618" to="3626">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="?" from="3626" to="3628">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3629" to="3643">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="a él" from="3644" to="3652">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="la toalla" from="3653" to="3664">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="3664" to="3666">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3667" to="3681">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="tú" from="3682" to="3686">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="a él" from="3687" to="3695">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="la toalla" from="3696" to="3707">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="3707" to="3709">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3710" to="3724">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="a él" from="3725" to="3733">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="tú" from="3734" to="3738">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="la toalla" from="3739" to="3750">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="3750" to="3752">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3753" to="3767">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="a él" from="3768" to="3776">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="la toalla" from="3777" to="3788">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="tú" from="3789" to="3793">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="?" from="3793" to="3795">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3796" to="3810">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="tú" from="3811" to="3815">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="la toalla" from="3816" to="3827">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="a él" from="3828" to="3836">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="?" from="3836" to="3838">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3839" to="3853">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la toalla" from="3854" to="3865">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="tú" from="3866" to="3870">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="a él" from="3871" to="3879">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="?" from="3879" to="3881">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="le has dado" from="3882" to="3896">
+<analysis stem="dar">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="le has dado"/>
+<rule class="irule" id="verb-le-irule" form="le has dado"/>
+<rule class="lrule" id="v-transitive-rule" form="le has dado"/>
+<rule class="lrule" id="v-dative-rule" form="le has dado"/>
+</analysis>
+</token>
+<token form="la toalla" from="3897" to="3908">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="a él" from="3909" to="3917">
+<analysis stem="***apa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="tú" from="3918" to="3922">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="?" from="3922" to="3924">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has subido" from="3925" to="3937">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="tú" from="3938" to="3942">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="la toalla" from="3943" to="3954">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="3955" to="3978">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="3978" to="3980">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has subido" from="3981" to="3993">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="tú" from="3994" to="3998">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="3999" to="4022">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="la toalla" from="4023" to="4034">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="4034" to="4036">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has subido" from="4037" to="4049">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="la toalla" from="4050" to="4061">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="tú" from="4062" to="4066">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4067" to="4090">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4090" to="4092">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has subido" from="4093" to="4105">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4106" to="4129">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="tú" from="4130" to="4134">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="la toalla" from="4135" to="4146">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="?" from="4146" to="4148">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has subido" from="4149" to="4161">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="la toalla" from="4162" to="4173">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4174" to="4197">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="tú" from="4198" to="4202">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="?" from="4202" to="4204">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="has subido" from="4205" to="4217">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4218" to="4241">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="la toalla" from="4242" to="4253">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="tú" from="4254" to="4258">
+<analysis stem="***-pa***">
+<rule class="irule" id="chunk-2-sg-irule" form="tú"/>
+</analysis>
+</token>
+<token form="?" from="4258" to="4260">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="qué" from="Z" to="Z">
+<analysis stem="***-Qu***">
+<rule class="irule" id="chunk-sg-irule" form="qué"/>
+</analysis>
+</token>
+<token form="has subido" from="4267" to="4279">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4280" to="4303">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4303" to="4305">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la toalla" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="la has subido" from="4318" to="4334">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="la has subido"/>
+<rule class="irule" id="verb-la-irule" form="la has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="la has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="la has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4335" to="4358">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4358" to="4360">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la toalla" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="a quién" from="Z" to="Z">
+<analysis stem="***aQa***">
+<rule class="irule" id="chunk-sg-irule" form="a quién"/>
+</analysis>
+</token>
+<token form="se la has subido" from="4385" to="4405">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="se la has subido"/>
+<rule class="irule" id="verb-se-la-irule" form="se la has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="se la has subido"/>
+<rule class="lrule" id="v-dative-rule" form="se la has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="se la has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4406" to="4429">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4429" to="4431">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a quién" from="Z" to="Z">
+<analysis stem="***aQa***">
+<rule class="irule" id="chunk-sg-irule" form="a quién"/>
+</analysis>
+</token>
+<token form="la toalla" from="4444" to="4455">
+<analysis stem="***-du***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="se la has subido" from="4456" to="4476">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="se la has subido"/>
+<rule class="irule" id="verb-se-la-irule" form="se la has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="se la has subido"/>
+<rule class="lrule" id="v-dative-rule" form="se la has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="se la has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4477" to="4500">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4500" to="4502">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="la toalla" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="se la has subido" from="4524" to="4544">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="se la has subido"/>
+<rule class="irule" id="verb-se-la-irule" form="se la has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="se la has subido"/>
+<rule class="lrule" id="v-dative-rule" form="se la has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="se la has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4545" to="4568">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4568" to="4570">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a él" from="Z" to="Z">
+<analysis stem="***aTa***">
+<rule class="irule" id="chunk-masc-sg-irule" form="a él"/>
+</analysis>
+</token>
+<token form="la toalla" from="Z" to="Z">
+<analysis stem="***-Tu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="la toalla"/>
+</analysis>
+</token>
+<token form="se la has subido" from="4592" to="4612">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="se la has subido"/>
+<rule class="irule" id="verb-se-la-irule" form="se la has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="se la has subido"/>
+<rule class="lrule" id="v-dative-rule" form="se la has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="se la has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4613" to="4636">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4636" to="4638">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="a quién" from="Z" to="Z">
+<analysis stem="***aQa***">
+<rule class="irule" id="chunk-sg-irule" form="a quién"/>
+</analysis>
+</token>
+<token form="qué" from="4651" to="4656">
+<analysis stem="***-iu***">
+<rule class="irule" id="chunk-sg-irule" form="qué"/>
+</analysis>
+</token>
+<token form="has subido" from="4657" to="4669">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4670" to="4693">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4693" to="4695">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+<segment>
+<token form="qué" from="Z" to="Z">
+<analysis stem="***-Qu***">
+<rule class="irule" id="chunk-sg-irule" form="qué"/>
+</analysis>
+</token>
+<token form="a quién" from="4702" to="4713">
+<analysis stem="***aia***">
+<rule class="irule" id="chunk-sg-irule" form="a quién"/>
+</analysis>
+</token>
+<token form="has subido" from="4714" to="4726">
+<analysis stem="subir">
+<rule class="irule" id="verb-2-sg-present-indicative-irule" form="has subido"/>
+<rule class="irule" id="verb-non-clitic-irule" form="has subido"/>
+<rule class="lrule" id="v-transitive-rule" form="has subido"/>
+<rule class="lrule" id="v-unaccusative-rule" form="has subido"/>
+<rule class="lrule" id="v-predicative-rule" form="has subido"/>
+</analysis>
+</token>
+<token form="hasta la habitación" from="4727" to="4750">
+<analysis stem="***hdu***">
+<rule class="irule" id="chunk-fem-sg-irule" form="hasta la habitación"/>
+</analysis>
+</token>
+<token form="?" from="4750" to="4752">
+<analysis stem="***PUNCT***">
+</analysis>
+</token>
+<token form="tu" from="Z" to="Z">
+<analysis stem="***-Ta***">
+<rule class="irule" id="chunk-2-sg-irule" form="tu"/>
+</analysis>
+</token>
+</segment>
+</text>

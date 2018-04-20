@@ -1,0 +1,188 @@
+
+
+comps-phrase := basic-comps-phrase & head-initial-phrase.
+
+
+
+
+
+Ennss := state & 
+ [  SYNSEM  [  KEYS.OKEY cons,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  PARG no-individual,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+Ennns := state & 
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  PARG no-individual,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+
+Ennsi := state & 
+ [  SYNSEM  [  KEYS.OKEY cons,
+           LOCAL  [  HEAD.INTR yes,
+                   SEM.HOOK  [  PARG no-individual,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+
+Esnsi := state & 
+ [  SYNSEM  [  KEYS.OKEY cons,
+           LOCAL  [  HEAD.INTR yes,
+                   SEM.HOOK  [  PARG index,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+
+
+Esnss := state & 
+ [  SYNSEM  [  KEYS.OKEY cons,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  PARG index,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+
+
+Annns := activity & 
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  PARG no-individual,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+
+Asnsi := activity & 
+ [  SYNSEM  [  KEYS.OKEY cons,
+           LOCAL  [  HEAD.INTR yes,
+                   SEM.HOOK  [  PARG index,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+
+Assni := activity & 
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR yes,
+                   SEM.HOOK  [  PARG index,
+                              CARG index & #index,
+                              EARG #index  ]  ]  ]  ] .
+
+
+
+Csnnt := v-become-c &
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  IARG #arg,
+		              PARG index & #arg,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+Cnsnt := v-become-c &
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  CARG index & #index,
+                              IARG #index,
+                              PARG no-individual  ]  ]  ]  ] .
+
+
+
+Lnsne := achievement &
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR yes,
+                   SEM.HOOK  [  CARG index & #index,
+                              IARG #index,
+                              PARG no-individual  ]  ]  ]  ] .
+
+
+
+Rnsns := accomplishment &
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  CARG index & #index,
+                              IARG #index,
+                              PARG no-individual  ]  ]  ]  ] .
+
+
+Rnnns := accomplishment  &
+ [  SYNSEM  [  KEYS.OKEY null,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  PARG no-individual,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+Rnnss := accomplishment  &
+ [  SYNSEM  [  KEYS.OKEY cons,
+           LOCAL  [  HEAD.INTR no,
+                   SEM.HOOK  [  PARG no-individual,
+                              CARG no-individual  ]  ]  ]  ] .
+
+
+pronoun           := lex-item &
+		     self-binded-mrs-lex-item &
+		     instance-sem-lex-item & 
+		     agree-lex-item & 
+		     non-topic-lex-item &	
+                     non-clitics-lex-item & 
+                     non-slash-lex-item & 
+ [  SYNSEM phr-synsem &  [  LOCAL  [  HEAD det,
+		      	      	VAL saturated  ]  ] ,
+  ARG-ST null  ] .
+
+personal-pronoun   := lex-item &			
+			self-binded-mrs-lex-item &
+			instance-sem-lex-item & 
+			agree-lex-item &
+               		non-topic-lex-item &	
+                        non-slash-lex-item & 
+ [  SYNSEM phr-synsem &  [  LOCAL  [  HEAD det &  [  CASE.CLITIC #clitic  ] ,
+		                             VAL saturated  ] ,
+	   NON-LOCAL.CLITICS #clitic  ] ,
+  ARG-ST null  ] .
+
+topic-trace := lex-item &			
+		      self-binded-mrs-lex-item &
+		      instance-sem-lex-item & 
+		      agree-lex-item & 
+		      non-slash-lex-item &
+ [  SYNSEM unexpressed-synsem &  [  LOCAL  [  HEAD det &  [  CASE.CLITIC #clitic  ] ,
+					VAL saturated  ] ,
+				NON-LOCAL.CLITICS #clitic  ]  ] .
+
+focus-trace := lex-item &			
+	      self-binded-mrs-lex-item &
+	      instance-sem-lex-item & 
+	      agree-lex-item & 
+              non-topic-lex-item &	
+              non-clitics-lex-item &
+ [  SYNSEM gap-synsem &  [  LOCAL  [  HEAD det,
+                                VAL saturated  ]  ]  ] .
+
+
+preposition   := lex-item &
+		 norm-mrs-lex-item &
+		 active-sem-lex-item & 
+ [  SYNSEM phr-synsem &  [  LOCAL  [  HEAD adp &  [  PRD yes  ] ,
+                      	      	VAL saturated  ]  ]  ] .
+
+
+
+basic-complementizer := lex-item & norm-hook-lex-item &
+ [  SYNSEM   [  NON-LOCAL.CLITICS non-append-list,
+	   LOCAL  [  SEM.HOOK.INDEX event &  [  I #agr  ] ,
+		   AGR #agr,		   
+		   HEAD comp,
+		   VAL.COMPS #comps &  [FIRST   [  LOCAL  [  HEAD verb,
+						  VAL saturated  ] ,
+					  NON-LOCAL  [  SLASH.LAST null,
+						      CLITICS.LAST null  ]  ] , REST null  ]   ]  ] ,
+  ARG-ST #comps  ] .
+
+
+
+complementizer := basic-complementizer & 
+ [  SYNSEM phr-synsem &  [  LOCAL  [  SEM.RELS.LIST  [FIRST   [  ARG0 #index  ]  ] ,
+		 VAL.COMPS  [FIRST   [  LOCAL.SEM.HOOK  [  INDEX #index  ]  ]  , REST null  ]   ]  ]  ] .
+

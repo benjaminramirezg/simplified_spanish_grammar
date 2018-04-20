@@ -1,0 +1,78 @@
+INSTRUCCIONES PARA LA INSTALACIÓN Y USO DE SGP
+
+1) SON NECESARIOS: 
+
+   SGP ha sido usado en sistemas operativos Linux (Kubuntu 12.04)
+   Antes de nada, nos aseguramos de que tenemos instalado en el ordenador lo siguiente:
+
+      a) Perl 5.
+      
+      b) MySQL 5.
+      
+      c) Librerías de Perl: 
+      
+			     locale, 
+			     strict, 
+			     warning, 
+			     Benchmark, 
+			     Clone, 
+			     Data::Dumper, 
+			     DBI, 
+			     Encode, 
+			     Encode::Guess, 
+			     GraphViz, 
+			     IO::File, 
+			     IO::Handle, 
+			     XML::Simple, 
+			     XML::XPath, 
+			     XML::XPath::XMLParser
+
+2) CREACIÓN DE BASES DE DATOS:
+
+   Nos situamos con una consola en la carpeta de SGP:
+
+      a) Base de datos 'lexicon'.
+   
+         - Ejecutamos en la consola: 
+         
+	      perl CreateLexicon.pl
+	      
+         - Aparecerá un diálogo en el que se nos pedirá nuestro nombre de usuario de MySQL (por ejemplo, 'root') y la correspondiente contraseña. Una vez introducidos estos datos, el script crea en nuestro servidor MySQL la base de datos 'lexicon', con las palabras necesarias para analizar la test suite.
+         
+      b) Base de datos 'ssg'.
+      
+        - Ejectutamos en la consola:
+        
+             perl LoadNewGrammar.pl
+             
+         - Aparecerá un diálogo en el que se nos preguntará si queremos crear la gramática 'ssg' o la gramática 'nssg'. Respondemos ssg. A continuación se nos vuelve a pedir que introduzcamos nuestro nombre de usuario de MySQL y la contraseña. Una vez introducidos los datos, el script comienza a crear la base de datos correspondiente a la gramática ssg.
+         
+       c) Base de datos 'nssg'.
+      
+        - Ejectutamos en la consola:
+        
+             perl LoadNewGrammar.pl
+             
+         - Aparecerá un diálogo en el que se nos preguntará si queremos crear la gramática 'ssg' o la gramática 'nssg'. Respondemos nssg. A continuación se nos vuelve a pedir que introduzcamos nuestro nombre de usuario de MySQL y la contraseña. Una vez introducidos los datos, el script comienza a crear la base de datos correspondiente a la gramática nssg.
+         
+3) ANÁLISIS: 
+
+   Una vez creadas las bases de datos, nos situamos con una consola en la carpeta de SGP. 
+   
+      - Ejecutamos lo siguiente:
+      
+	    perl ParseSentence.pl
+	    
+      - Se nos pedirá el nombre de la gramática con respecto a la cual queremos analizar (ssg o nssg).  A continuación se nos vuelve a pedir que introduzcamos nuestro nombre de usuario de MySQL y la contraseña. Por último, se nos preguntará si queremos que el parser contemple constituyentes discontinuos o no (el mensaje es 'Scrambling:' y las posibles respuestas son 0 -no queremos usar constituyentes discontinuos- o 1 -sí queremos-). A continuación se carga la gramática que hemos indicado.
+      - Una vez cargada la gramática, podemos escribir tras 'Oración:' cualquiera de las oraciones de la test suite (TestSuite.txt). El sistema analiza esa oración. En la consola aparecerá el número de análisis encontrados y el tiempo empleado. En la carpeta TREES aparecerán representados en archivos .png dichos análisis.
+      - Una vez analizada una oración aparece de nuevo el mensaje 'Oración:'. El sistema está listo para analizar otra oración de la test suite.
+
+4) PREPROCESAMIENTO:
+
+   Si se desea observar el output del preprocesamiento, hágase lo siguiente con una consola en la carpeta de SGP.
+
+      - Ejecutamos lo siguiente:
+
+          perl TokenizeTestSuite.pl
+
+      - Se nos pedirá el nombre de la gramática para el que queremos preparar el preprocesamiento (ssg o nssg).  A continuación se nos vuelve a pedir que introduzcamos nuestro nombre de usuario de MySQL y la contraseña. A continuación se crea un archivo SssgTestSuite.xml o NssgTestSuite.xml, en XML, con la testsuite preprocesada.

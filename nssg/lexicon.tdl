@@ -1,0 +1,295 @@
+;; Complementante sin preposición
+
+___---___  := complementizer  &
+[ STEM.LIST.FIRST "***---***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE no,
+                   HEAD.CASE str ],
+           KEYS.KEY [ PRED ___---____rel ]]].
+
+;; SP con preposición "A" + determinante + nombre animado
+
+___ada___  := pronoun  &
+[ STEM.LIST.FIRST "***ada***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE yes,
+  	           HEAD.CASE acc-dat ],
+           KEYS.KEY [ PRED ___ada____rel ]]].
+
+;; SP con preposición "A" + interrogativo animado
+
+___aia___  := pronoun  &
+[ STEM.LIST.FIRST "***aia***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE yes,
+                   HEAD.CASE acc-dat ],
+  	   KEYS.KEY [ PRED ___aia____rel ]]].
+
+___aQa___  := focus-trace  &
+[ STEM.LIST.FIRST "***aQa***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE yes,
+                   HEAD.CASE acc-dat ],
+  	   KEYS.KEY [ PRED ___aQa____rel ]]].
+
+;; SP con preposición "A" + pronombre personal
+
+___apa___ := personal-pronoun  &
+[ STEM.LIST.FIRST "***apa***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE yes,
+                   HEAD.CASE acc-dat ],
+  	   KEYS.KEY [ PRED ___apa____rel ]]].
+
+___aTa___ := topic-trace  &
+[ STEM.LIST.FIRST "***aTa***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE yes,
+                   HEAD.CASE acc-dat ],
+  	   KEYS.KEY [ PRED ___aTa____rel ]]].
+
+___eTa___ := topic-trace  &
+[ STEM.LIST.FIRST "***eTa***",
+  SYNSEM [ LOCAL [ HEAD.CASE obl,
+                   SEM.HOOK.INDEX.SORT.ANIMATE yes ],
+  	   KEYS.KEY [ PRED ___eTa____rel ]]].
+
+
+;; SP con preposición "CON" + determinante + nombre animado
+
+___cda___ := preposition  &
+[ STEM.LIST.FIRST "***cda***",
+  SYNSEM.KEYS.KEY.PRED ___cda____rel ].
+
+;; SP con preposición "CON" + determinante + nombre inanimado
+
+___cdu___ := preposition  &
+[ STEM.LIST.FIRST "***cdu***",
+  SYNSEM.KEYS.KEY.PRED ___cdu____rel ].
+
+;; SP con preposición "DE" + complementante
+
+___d--___ := complementizer  &
+[ STEM.LIST.FIRST "***d--***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE no,
+                   HEAD.CASE obl ],
+  	   KEYS.KEY [ PRED ___d--____rel ]]].
+
+;; SD + nombre animado
+
+___-da___ := pronoun  &
+[ STEM.LIST.FIRST "***-da***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE yes ],
+           KEYS.KEY [ PRED ___-da____rel ]]].
+
+;; SP con preposición "DE" + determinante + nombre inanimado
+
+___ddu___ := pronoun  &
+[ STEM.LIST.FIRST "***ddu***",
+  SYNSEM [ LOCAL [ SEM.HOOK.INDEX.SORT.ANIMATE no,
+                   HEAD.CASE obl ],
+           KEYS.KEY [ PRED ___ddu____rel ]]].
+
+;; SD + nombre inanimado
+
+___-du___ := pronoun  &
+[ STEM.LIST.FIRST "***-du***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___-du____rel ]]].
+
+___-Tu___ := topic-trace  &
+[ STEM.LIST.FIRST "***-Tu***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___-Tu____rel ]]].
+
+;; SP con preposición "DE" con NP inanimado
+
+___d-u___ := pronoun  &
+[ STEM.LIST.FIRST "***d-u***",
+  SYNSEM [ LOCAL [ HEAD.CASE obl,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___d-u____rel ]]].
+
+;; SP con preposición "EN" + determinante + nombre inanimado
+
+___edu___ := pronoun  &
+[ STEM.LIST.FIRST "***edu***",
+  SYNSEM [ LOCAL [ HEAD.CASE obl,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___edu____rel ]]].
+
+;; SP con preposición "EN" + pronombre personal
+
+___epa___ := pronoun  &
+[ STEM.LIST.FIRST "***epa***",
+  SYNSEM [ LOCAL [ HEAD.CASE obl,
+                   SEM.HOOK.INDEX.SORT.ANIMATE yes ],
+           KEYS.KEY [ PRED ___epa____rel ]]].
+
+;; SP con preposición "HASTA" + determinante + nombre inanimado
+
+___hdu___ :=  preposition &
+[ STEM.LIST.FIRST "***hdu***",
+  SYNSEM.KEYS.KEY.PRED ___hdu____rel ].
+
+;; Pronombre interrogativo qué
+
+___-iu___ := pronoun  &
+[ STEM.LIST.FIRST "***-iu***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___-iu____rel ]]].
+
+___-Qu___ := focus-trace  &
+[ STEM.LIST.FIRST "***-Qu***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___-Qu____rel ]]].
+
+;; Pronombre personal
+
+___-pa___ := personal-pronoun  &
+[ STEM.LIST.FIRST "***-pa***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE yes ],
+           KEYS.KEY [ PRED ___-pa____rel ]]].
+
+___-Ta___ := topic-trace  &
+[ STEM.LIST.FIRST "***-Ta***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE yes ],
+           KEYS.KEY [ PRED ___-Ta____rel ]]].
+
+
+;; NP inanimado
+
+___--u___ := pronoun  &
+[ STEM.LIST.FIRST "***--u***",
+  SYNSEM [ LOCAL [ HEAD.CASE str,
+                   SEM.HOOK.INDEX.SORT.ANIMATE no ],
+           KEYS.KEY [ PRED ___--u____rel ]]].
+
+
+acordarse := Esnsi &
+[ STEM.LIST.FIRST "acordarse",
+  SYNSEM.KEYS.KEY [ PRED acordarse_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+admirar := Esnss &
+[ STEM.LIST.FIRST "admirar",
+  SYNSEM.KEYS.KEY [ PRED admirar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+calcular := Annns &
+[ STEM.LIST.FIRST "calcular",
+  SYNSEM.KEYS.KEY [ PRED calcular_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+comparar := Rnsns &
+[ STEM.LIST.FIRST "comparar",
+  SYNSEM.KEYS.KEY [ PRED comparar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+comprar := Annns &
+[ STEM.LIST.FIRST "comprar",
+  SYNSEM.KEYS.KEY [ PRED comprar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+confiar := Ennsi &
+[ STEM.LIST.FIRST "confiar",
+  SYNSEM.KEYS.KEY [ PRED confiar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+contratar := Rnnns &
+[ STEM.LIST.FIRST "contratar",
+  SYNSEM.KEYS.KEY [ PRED contratar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+convencer := Rnnss &
+[ STEM.LIST.FIRST "convencer",
+  SYNSEM.KEYS.KEY [ PRED convencer_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+dar := Rnnns &
+[ STEM.LIST.FIRST "dar",
+  SYNSEM.KEYS.KEY [ PRED dar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+decir := Annns &
+[ STEM.LIST.FIRST "decir",
+  SYNSEM.KEYS.KEY [ PRED decir_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+desentenderse := Asnsi  &
+[ STEM.LIST.FIRST "desentenderse",
+  SYNSEM.KEYS.KEY [ PRED desentenderse_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+encontrar := Rnnns &
+[ STEM.LIST.FIRST "encontrar",
+  SYNSEM.KEYS.KEY [ PRED encontrar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+pagar := Annns &
+[ STEM.LIST.FIRST "pagar",
+  SYNSEM.KEYS.KEY [ PRED pagar_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+perder := Rnnns &
+[ STEM.LIST.FIRST "perder",
+  SYNSEM.KEYS.KEY.PRED perder_v_rel ].
+
+relacionarse := Assni &
+[ STEM.LIST.FIRST "relacionarse",
+  SYNSEM.KEYS.KEY [ PRED relacionarse_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+saber := Ennss &
+[ STEM.LIST.FIRST "saber",
+  SYNSEM.KEYS.KEY [ PRED saber_v_rel,
+                    ARG1.SORT.ANIMATE yes ]].
+
+secar := Csnnt &
+[ STEM.LIST.FIRST "secar",
+  SYNSEM.KEYS.KEY.PRED secar_v_rel ].
+
+subir := Cnsnt &
+[ STEM.LIST.FIRST "subir",
+  SYNSEM.KEYS.KEY [ PRED subir_v_rel ]].
+
+tener := Ennns &
+[ STEM.LIST.FIRST "tener",
+  SYNSEM.KEYS.KEY.PRED tener_v_rel ].
+
+venir := Lnsne &
+[ STEM.LIST.FIRST "venir",
+  SYNSEM.KEYS.KEY.PRED venir_v_rel ].
+
+;;;; Descripción de los tipos
+
+
+;;;; 1ª POSICIÓN. TIPO SEMÁNTICO GENERAL
+
+;;;;             R: Realización
+;;;;             L: Logro
+;;;;             C: Cambio de estado
+;;;;             A: Actividad
+;;;;             E: Estado
+
+;;;; 2ª POSICIÓN. Carácter pronominal
+
+;;;;             s: uso pronominal
+;;;;             n: uso no pronominal
+
+;;;; 3ª POSICIÓN. Posibilidad de predicativo
+
+;;;;             s: posibilidad de predicativo
+;;;;             n: no posibilidad de predicativo
+
+;;;; 4ª POSICIÓN. Argumento oblicuo
+
+;;;;             s: posibilidad de oblicuo
+;;;;             n: no posibilidad de oblicuo
+
+;;;; 5ª POSICIÓN. Transitividad
+
+;;;;             t: posibilidad de transitivo e intransitivo
+;;;;             e: Intransitivo inacusativo
+;;;;             i: Intransitivo inergativo

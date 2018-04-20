@@ -1,0 +1,1341 @@
+;; GRAMÁTICA DEL ESPAÑOL DE NUEVA PLANTA
+;; Benjamín Ramírez. Julio 2011
+
+;; TIPOS GENERALES
+
+avm := *top*.
+atom := *top*.
+string := *top*.
+
+;; RASGOS ATÓMICOS: ATOM
+
+form := atom.
+
+fin := form.
+inf := form.
+ger := form.
+part := form.
+
+voice := atom.
+
+active := voice.
+pass := voice.
+
+;; RASGOS DE CONCORDANCIA
+
+gend := atom.
+per := atom.
+num := atom.
+
+masc := gend.
+fem := gend.
+
+1 := per.
+2 := per.
+3 := per.
+
+sg := num.
+pl := num.
+
+;; RASGOS TEMPOASPECTUALES Y MODALES
+
+tense := atom.
+aspect := atom.
+mood := atom.
+
+present := tense.
+past := tense.
+future := tense.
+conditional := tense.
+no-tense := tense.
+
+perfect := aspect.
+imperfect := aspect.
+progressive := aspect.
+no-aspect := aspect.
+
+indicative := mood.
+subjuntive := mood.
+imperative := mood.
+no-mood := mood.
+
+;; VALORES BOOLEANOS
+
+bool := atom.
+yes := bool.
+no := bool.
+
+;; SIGNO LINGÜÍSTICO: AVM
+
+;; CASO ABSTRACTO
+
+;; El caso se convierte en un AVM, pues incluimos
+;; en él el rasgo CLITIC, cuyo valor es una lista
+;; diferencia. Este es el modo de caracterización
+;; local de un argumento en cuanto a si aporta o
+;; no clítico a su verbo.
+
+case := avm &
+[ CLITIC diff-list ].
+
+str := case. ;; structural
+acc-dat := case.
+;; Solo acusativo y dativo pueden aportar clítico
+;; El clítico es un tipo agr, es mera concordancia
+;; Se han establecido subtipos de agr llamados con
+;; los nombres de los casos. Un clítico de dativo,
+;; por ejemplo, es un png llamado dative. 
+
+nom := str & 
+[ CLITIC non-append-list ].
+
+;; Ac y Dat están pendientes de caracterización.
+;; En casos aportan clítico y en casos no.
+
+acc := str & acc-dat &
+[ CLITIC append-list & [ LIST <accusative, ... > ]].
+
+dat := acc-dat &
+[ CLITIC append-list & [ LIST <dative, ... > ]].
+
+obl := case &
+[ CLITIC non-append-list ].
+
+;; CATEGORÍAS GRAMATICALES
+
+;; PRD "no" indica argumento. Quizá sea
+;; útil en la definición de argumento.
+
+head := avm &
+[ FORM form,
+  PRD bool,
+  CASE case ].
+
+noun := head &
+[ PRD no ].
+
+comp := head &
+[ PRD no ].
+
+det := head &
+[ PRD no ].
+
+adp := head &
+[ PRD yes ].
+
+verb := head &
+[ VOICE voice,
+  INTR bool,
+  PRD yes,
+  INV bool,
+  SCR bool ].
+
+;; CARACTERIZACIÓN SINTÁCTICO-SEMÁNTICA
+
+synsem := avm &
+[ LOCAL local,
+  NON-LOCAL non-local,
+  KEYS keyrels ].
+
+;; CLITICS: Rasgo para los clíticos 
+;; (entendidos como marcas no locales)
+
+non-local := avm &
+[ SLASH diff-list,
+  TOPIC diff-list,
+  CLITICS diff-list]. 
+
+;; Tipo entendido como tapón de las listas no locales.
+;; Las reglas léxicas de construcciones añaden argumentos
+;; a ARG-ST. Esto hace que esos argumentos aporten posibles
+;; marcas no locales. Por ello, no se pueden cerrar estas 
+;; estas listas hasta que se esté seguro de que no se va a 
+;; aplicar sobre ellas una nueva regla léxica. Eso se hace 
+;; en las reglas de proyección. Se ha especificado en la
+;; primera aparición de HEAD-DTR y en la de NON-HEAD-DTR.
+
+non-local-stopper := non-local &
+[ SLASH.LAST null,
+  TOPIC.LAST null,
+  CLITICS.LAST null].
+
+local := avm & 
+[ HEAD head,
+  VAL val,
+  AGR agr,
+  SEM mrs ].
+
+val := avm &
+[ SUBJ list,
+  COMPS list ].
+
+agr := avm &
+[ PER per,
+  NUM num,
+  GEND gend ].
+
+;; Los clíticos son tipos de concordancia.
+
+structural := agr.
+nominative := structural.
+accusative := structural.
+dative := agr.
+obliq := agr.
+
+;; SEMÁNTICA
+
+mrs := avm &
+[ HOOK hook,
+  RELS diff-list,
+  HCONS diff-list,
+  MSG string].
+
+psoa := mrs &
+[ HOOK.INDEX event ].
+
+nom-obj := mrs &
+[ HOOK.INDEX index ].
+
+qeq := avm &
+[ HARG handle,
+  LARG handle ].
+
+; Igual que se publica el argumento externo,
+; puede ser interesante que publiquemos también 
+; el interno. X.Ej. La regla léxica que añade
+; un predicativo, hace que este predique, siempre
+; sobre el argumento interno. Pero este puede ser
+; tanto el 1º o 2º en ARG-ST...
+
+; Téngase en cuenta que XARG no representa propiamente
+; al argumento externo (en tanto que opuesto a IARG). 
+; Representa en cada verbo al argumento más prominente.
+; Este, siempre que hay externo es el externo, pero si
+; no lo hay (un verbo inacusativo, una forma pasiva...)
+; es el interno. Para mantener la simetría, se ha añadido
+; EARG (argumento externo), y XARG queda como argumento
+; prominente.
+
+hook := avm &
+[ LTOP handle,
+  INDEX semarg,
+  XARG semarg,
+  IARG semarg,
+  EARG semarg,
+  CARG semarg,
+  PARG semarg ]. 
+
+semarg := avm.
+
+;; Establece la no existencia de un individuo en una
+;; posición. Es muy útil para caracterizar semánticamente
+;; a las unidades léxicas (e puede caracterizar directa-
+;; mente la ausencia de una posición semántica).
+
+no-individual := semarg.
+
+individual := semarg &
+[ I agr,
+  SORT sort ].
+
+handle := semarg.
+
+index := individual.
+ref-ind := index.
+
+event := individual &
+[ I [ PER 3,
+      NUM sg ],
+  E tam ].
+
+tam := avm &
+[ TENSE tense,
+  ASPECT aspect,
+  MOOD mood ].
+
+relation := avm &
+[  LBL handle,
+   PRED string,
+   ARG0 individual ].
+
+relation1 := relation & 
+[ ARG1 semarg ].
+
+relation2 := relation1 & 
+[ ARG2 semarg ].
+
+relation3 := relation2 & 
+[ ARG3 semarg ].
+
+relation4 := relation3 & 
+[ ARG4 semarg ].
+
+q-relation := relation & 
+[ RSTR handle,
+  BODY handle ].
+
+marg-relation := relation2 &
+[ MARG handle ].
+question_m_rel := marg-relation.
+proposition_m_rel := marg-relation.
+
+sort := avm &
+[ ACT bool,
+  BECOME bool,
+  ANIMATE bool ].
+
+;; KEYS
+
+;; Son claves para determinar ad hoc,
+;; típicamente en el léxico, una relación
+;; de la unidad léxica en cuestión, así
+;; como la de los objetos. OKEY puede
+;; lista las posibilidades de objetos
+
+keyrels := avm &
+[ KEY relation,
+  OKEY list ].
+	 
+;; Tipos de synsem
+
+;; Con realización fonética
+
+expressed-synsem := synsem.
+phr-synsem := expressed-synsem.
+
+;; Pronombres sin realización fonética
+;; No se ha decidido si se tratarán 
+;; las variables y los pronombres igual.
+;; De momento, no se dice nada sobre QUE,
+;; REL y TOP.
+
+unexpressed-synsem := synsem &
+[ LOCAL #local,
+  NON-LOCAL [ SLASH non-append-list,
+	      TOPIC append-list & 
+                        [ LIST [ FIRST #local,
+                                 REST list ]]]].
+
+;; Variables (sin realización fonética)
+;; REST null. Solo un movimiento por lista ¿?
+
+;; En SLASH se listan elementos local (a di-
+;; ferencia de VAL, donde se listan elementos
+;; synsem.
+
+;; Tampoco se ha decidido nada sobre el impacto
+;; de REL, QUE y TOP en las variables.
+
+gap-synsem := synsem &
+[ LOCAL #local,
+  NON-LOCAL [ TOPIC non-append-list,
+	      SLASH append-list & 
+                        [ LIST [ FIRST #local,
+                                 REST null ]]]].
+
+;; SIGNOS
+
+;; STOPPER
+;; Tapón de ARG-ST. Se ha introducido como sistema
+;; para que las reglas léxicas puedan añadir argumentos
+;; en ARG-ST sin saber si irán en una posición un otra de
+;; esta lista. Es útil, por ejemplo, para poder establecer
+;; una sola regla de añadido de dativo que añada el argumento
+;; tanto a verbos transitivos (en 3ª posición) como a verbos
+;; intransitivos (en 2ª posición). 
+
+;; Las reglas léxicas que caracterizan ARG-ST funcionan así:
+;; Las primeras reglas en operar ubican en ARG-ST uno o dos
+;; argumentos (construcciones in o transitivas). Además, la
+;; última posición de estas listas ARG-ST se identifica con
+;; la lista STOPPER.
+
+;; A continuación, se aplican sobre estas reglas otras reglas
+;; que pueden añadir a ARG-ST más argumentos. Para ello, se
+;; caracteriza la lista STOPPER de la regla original (DTR.
+;; STOPPER), que, como se ha dicho, apuntaba a la última
+;; posición de ARG-ST. Para que el proceso se pueda repetir,
+;; estas regla de añadido de argumentos identifican la última
+;; posición de DTR.STOPPER con el STOPPER raíz.
+
+;; INFLECTED y CONSTRUCTION
+;; Establecen si los lexemas han pasado los procesos léxicos 
+;; indispensables para empezar a operar en la sintaxis. INFLECTED
+;; pasa de no a yes en las reglas flexivas. En un sistema que no
+;; estipule desde fuera las reglas léxicas a aplicar sobre cada 
+;; unidad léxica, este rasgo es necesario. Si, como ocurre en 
+;; nuestro caso, el preprocesamiento estipula la aplicación de
+;; reglas flexivas, es inútil. Téngase en cuenta que, si un sistema
+;; se encuentra en el primer supuesto, habrá que estudiar cuándo pasa
+;; de no a yes si las reglas flexivas aplicables a una unidad léxica
+;; son más de una (como ocurre a aquí en el caso de los verbos).
+;; CONSTRUCTION, en cambio, parece indispensable. Aquí se pasa de no a yes
+;; en la aplicación de la primera regla no flexiva. El resto de reglas
+;; solo hacen añadidos argumentales a una estructura básica ya válida.
+
+sign := avm &
+[ STEM diff-list,
+  SYNSEM synsem,
+  ARG-ST list,
+  STOPPER list, 
+  ARGS list,
+  CONSTRUCTION bool,
+  INFLECTED bool].
+
+;; LEXEMAS Y REGLAS LÉXICAS
+
+;; Se caracteriza desde el principio 
+;; la semántica habitual de todo lexema:
+;; En su hook se "publican" el índice
+;; y el handle de la primera relación.
+
+lexeme := sign &
+[ STEM append-list ].
+
+
+;; Hipótesis. No se usa el concepto de "word"
+
+;; Las reglas flexivas se aplican ad hoc según
+;; lo propuesto por el preprocesamiento. 
+
+;; Secuenciación: 
+;;    1. Reglas flexivas INFLECTED no -> yes;
+;;    2. Reglas léxicas no flexivas 
+;;       INFLECTED yes/CONSTRUCTION no -> INFLECTED yes/CONSTRUCTION yes
+;;    3. Reglas gramaticales INFLECTED yes/CONSTRUCTION yes -> ...
+
+;; Identidad de STEM. Se considera que viene 
+;; totalmente especificado del preprocesamiento.
+;; Hipótesis: la gramática recibe unidades totalmente
+;; flexionadas.
+
+lex-rule := lexeme &
+[ DTR lexeme & #lexeme, 
+  ARGS cons & [ FIRST #lexeme,
+                REST null ]].
+
+;; Se pasa todo de la hija a la madre
+
+infl-rule := lex-rule &
+[ CONSTRUCTION #construction,
+  STEM #stem,
+  SYNSEM #synsem,
+  ARG-ST #arg-st,
+  ARGS [ FIRST [ CONSTRUCTION #construction,
+		 INFLECTED no,
+		 STEM #stem,
+		 SYNSEM #synsem,
+		 ARG-ST #arg-st ]]].
+
+final-infl-rule := infl-rule &
+[ INFLECTED yes ].
+
+non-final-infl-rule := infl-rule &
+[ INFLECTED bool ].
+
+;; Constant. Hipótesis de reglas léxicas 
+;; no destructivas.
+
+;; STOPPER no sube. Si lo hiciera, la aportación
+;; de este en cada caso debería ser siempre la
+;; misma. No tendría sentido.
+
+;; La idea es que las reglas no sean destructivas.
+;; Pero para que el sistema de STOPPER funcione en
+;; NON-LOCAL, es necesario que madre e hija no
+;; identifiquen este rasgo, para que la regla pueda
+;; añadir los non-local del argumento que pueda
+;; aportar a los de los argumentos ya presentes.
+
+breaking-rule := lex-rule &
+[ INFLECTED yes,
+  CONSTRUCTION yes,
+  STEM #stem,
+  SYNSEM [ LOCAL [ HEAD [ FORM #form,
+                          PRD #prd,
+                          CASE #case,
+                          VOICE #voice,
+                          INTR #intr], 
+  	   	   AGR #agr,
+                   SEM #sem ],
+           NON-LOCAL #non-local,
+	   KEYS #keyrels ],
+  ARG-ST #arg-st,
+  STOPPER #stopper,
+  ARGS [ FIRST [ INFLECTED yes, 
+		 CONSTRUCTION yes,
+		 STEM #stem,
+		 SYNSEM [ LOCAL [ HEAD [  FORM #form,
+		                          PRD #prd,
+                                          CASE #case,
+                                          VOICE #voice,
+                                          INTR #intr ], 
+  	   	   	  	  AGR #agr,
+                   		  SEM #sem ],
+           	          NON-LOCAL #non-local, 
+			  KEYS #keyrels ],
+		 ARG-ST #arg-st,
+                 STOPPER #stopper & null ]]].
+
+inversion-c := breaking-rule &
+[ SYNSEM.LOCAL [ HEAD verb & [ INV yes,
+                               SCR no ],
+                 VAL [ SUBJ <>,
+                       COMPS [ FIRST #subj,
+                               REST #comps ]]],
+  DTR.SYNSEM.LOCAL [ HEAD verb & [ INV no,
+                                   SCR no ],
+                     VAL [ SUBJ [ FIRST #subj,
+                              REST null ],
+                           COMPS #comps ]]].
+
+scrambling-c := breaking-rule &
+[ SYNSEM.LOCAL [ HEAD verb & [ INV #inv,
+                               SCR yes ],
+                 VAL [ SUBJ #subj ]],
+  DTR.SYNSEM.LOCAL [ HEAD verb & [ INV #inv,
+                                   SCR no ],
+                     VAL [ SUBJ #subj ]]].
+
+
+scrambling-c-one := scrambling-c &
+[ SYNSEM.LOCAL.VAL.COMPS < #2, #1 >,
+ DTR.SYNSEM.LOCAL.VAL.COMPS < #1, #2  > ].
+
+scrambling-c-two := scrambling-c &
+[ SYNSEM.LOCAL.VAL.COMPS < #1, #3, #2 >,
+ DTR.SYNSEM.LOCAL.VAL.COMPS < #1, #2, #3  > ].
+
+scrambling-c-three := scrambling-c &
+[ SYNSEM.LOCAL.VAL.COMPS < #3, #1, #2 >,
+ DTR.SYNSEM.LOCAL.VAL.COMPS < #1, #2, #3  > ].
+
+scrambling-c-four := scrambling-c &
+[ SYNSEM.LOCAL.VAL.COMPS < #3, #2, #1 >,
+ DTR.SYNSEM.LOCAL.VAL.COMPS < #1, #2, #3  > ].
+
+scrambling-c-five := scrambling-c &
+[ SYNSEM.LOCAL.VAL.COMPS < #2, #1, #3 >,
+ DTR.SYNSEM.LOCAL.VAL.COMPS < #1, #2, #3  > ].
+
+scrambling-c-six := scrambling-c &
+[ SYNSEM.LOCAL.VAL.COMPS < #2, #3, #1 >,
+ DTR.SYNSEM.LOCAL.VAL.COMPS < #1, #2, #3  > ].
+
+const-rule := lex-rule &
+[ INFLECTED yes,
+  STEM #stem,
+  SYNSEM [ LOCAL #local,
+	   KEYS #keyrels ],
+  ARG-ST #arg-st,
+  ARGS [ FIRST [ INFLECTED yes, 
+		 CONSTRUCTION no,
+		 STEM #stem,
+		 SYNSEM [ LOCAL #local,
+			  KEYS #keyrels ],
+		 ARG-ST #arg-st]]].
+
+final-const-rule := const-rule &
+[ CONSTRUCTION yes ].
+
+non-final-const-rule := const-rule &
+[ CONSTRUCTION bool ].
+
+;; Regla léxica para añadir un elemento al non-local
+;; previamente creado en basic-one-arg o basic-two-arg.
+;; Este tipo se aplicará como padre a las reglas léxicas
+;; de añadido de un argumento (oblicuo o dativo). 
+
+basic-add-arg := const-rule &
+[ SYNSEM.NON-LOCAL.SLASH [ LIST #list1,
+			   LAST #last ],
+  DTR [ SYNSEM.NON-LOCAL.SLASH [ LIST #list1,
+				 LAST #list2 ],
+	STOPPER < [ NON-LOCAL.SLASH [ LIST #list2,
+				      LAST #last ]], ... > ]].
+basic-add-arg :+
+[ SYNSEM.NON-LOCAL.TOPIC [ LIST #llist1,
+			   LAST #llast ],
+  DTR [ SYNSEM.NON-LOCAL.TOPIC [ LIST #llist1,
+				 LAST #llist2 ],
+	STOPPER < [ NON-LOCAL.TOPIC [ LIST #llist2,
+				      LAST #llast ]], ... > ]].
+
+basic-add-arg :+
+[ SYNSEM.NON-LOCAL.CLITICS [ LIST #lllist1,
+			     LAST #lllast ],
+  DTR [ SYNSEM.NON-LOCAL.CLITICS [ LIST #lllist1,
+				   LAST #lllist2 ],
+	STOPPER < [ NON-LOCAL.CLITICS [ LIST #lllist2,
+					LAST #lllast ]], ... > ]].
+
+; Este añadido es necesario para suplir la
+; falta de agree entre el non-local de la madre
+; y la hija. Restringe que los clíticos de la unidad
+; sean conforme a la morfología
+
+
+;; SINTAGMAS
+
+phrase := sign &
+[ CONSTRUCTION yes,
+  INFLECTED yes ].
+
+;; PRINCIPIOS.
+
+;; En principio, todo sintagma generado con reglas es explícito.
+
+phrasal := phrase &
+[ SYNSEM phr-synsem ].
+
+;; HEAD FEATURE PRINCIPLE.
+;; Identidad de AGR, como en Matrix
+;; DECLARACIÓN DE HEAD-DTR. Este es el lugar en el que se cierran 
+;; los sistemas de suma argumental del léxico. HEAD-DTR y NON-HEAD-DTR
+;; son los rasgos que contemplan a las unidades gramaticales como 
+;; objetos sintácticos (núcleo y complemento). Por ello, es necesario
+;; que cuando una unidad deja de ser léxica para convertirse en objeto 
+;; sintáctico se cierre ya su posibilidad de recibir más argumentos
+;; locales (STOPPER null) y, en consecuencia, no locales (NON-LOCAL
+;; non-local-stopper).
+
+;; Ocurre otro tanto con NON-HEAD-DTR en binary-phrase.
+
+headed-phrase := phrasal &
+[ SYNSEM.LOCAL [ HEAD #cat,
+                 AGR #agr ],
+  HEAD-DTR sign & [ CONSTRUCTION yes,
+		    INFLECTED yes,
+                    SYNSEM [ LOCAL [ HEAD #cat,
+				     AGR #agr ],
+                             NON-LOCAL non-local-stopper ],
+                    STOPPER null ],
+  NON-HEAD-DTR sign & [ CONSTRUCTION yes,
+			INFLECTED yes,
+                        SYNSEM.LOCAL.VAL saturated,
+			STOPPER null ]]. ; Cierra la lista ARG-ST de las reglas léxicas ]. ;; Cierra la lista ARG-ST de las reglas léxicas
+
+;; HEAD VALENCE PRINCIPLE
+;; Nombres tomados de Matrix
+
+head-nexus-topic-phrase := headed-phrase &
+  [ SYNSEM.NON-LOCAL.TOPIC #top,
+    HEAD-DTR.SYNSEM.NON-LOCAL.TOPIC #top ].
+
+head-nexus-slash-phrase := headed-phrase &
+  [ SYNSEM.NON-LOCAL.SLASH #slash,
+    HEAD-DTR.SYNSEM.NON-LOCAL.SLASH #slash ].
+
+head-nexus-clitics-phrase := headed-phrase &
+  [ SYNSEM.NON-LOCAL.CLITICS #clitics,
+    HEAD-DTR.SYNSEM.NON-LOCAL.CLITICS #clitics ].
+
+head-valence-phrase := head-nexus-slash-phrase & head-nexus-clitics-phrase & head-nexus-topic-phrase.
+
+;; HEAD COMPOSITIONAL
+;; El núcleo gramatical también lo es semántico
+
+head-compositional := headed-phrase &
+[ SYNSEM.LOCAL.SEM.HOOK #hook,
+  HEAD-DTR.SYNSEM.LOCAL.SEM.HOOK #hook ].
+
+;; ARGS indica el orden lineal
+;; STEM se forma mediante diff-list de
+;; los miembros de STEM.
+
+;; En los tipos phr-synsem, unexpressed-synsem
+;; y gap-synsem se completa la caracterización.
+;; El primero tiene STEM append-list y el resto
+;; tienen non-append-list
+
+;;; HIPÓTESIS: phr-synsem. Los complementos en ARGS
+;;; nunca son elididos. Incompatible con la idea
+;;; elegante de que los elementos elididos funcionen
+;;; con las reglas generales. Para cambiar basta con
+;;; eliminar esta restricción y prescindir de las reglas
+;;; para elididos.
+
+;; Véase HEADED-PHRASE para ampliar las dos anotaciones siguientes.
+
+headed-phrase :+
+[ STEM [ LIST #stem1,
+	 LAST #stem3 ],
+  SYNSEM.LOCAL.SEM [ RELS [ LIST #rels1,
+			    LAST #rels3 ],
+		     HCONS [ LIST #hcons1,
+			     LAST #hcons3 ]],
+  HEAD-DTR sign & [ STEM [ LIST #stem1,
+			   LAST #stem2 ],
+		    SYNSEM.LOCAL.SEM [ RELS [ LIST #rels1,
+					      LAST #rels2 ],
+				       HCONS [ LIST #hcons1,
+					       LAST #hcons2 ]]], 
+  NON-HEAD-DTR sign & [ STEM [ LIST #stem2,
+			       LAST #stem3 ],
+			SYNSEM.LOCAL.SEM [ RELS [ LIST #rels2,
+						  LAST #rels3 ],
+					   HCONS [ LIST #hcons2,
+						   LAST #hcons3 ]]] ].
+
+head-initial-phrase := headed-phrase &
+[ HEAD-DTR #first,
+  NON-HEAD-DTR #second,
+  ARGS < #first, #second > ].
+
+head-final-phrase := headed-phrase &
+[ HEAD-DTR #second,
+  NON-HEAD-DTR #first,
+  ARGS < #first, #second > ].
+
+;; REGLAS GRAMATICALES PARA COMPLEMENTOS REALIZADOS.
+
+;;; COMPLEMENTOS
+
+;; REL para evitar que aparezcan pronombres relativos.
+
+basic-comps-phrase := head-valence-phrase & head-compositional &
+[ SYNSEM [ LOCAL.VAL [ SUBJ #subj,
+		       COMPS #rest ]],
+  HEAD-DTR.SYNSEM [ LOCAL.VAL [ SUBJ #subj,
+				COMPS [ FIRST #synsem,
+					REST #rest ]]],
+  NON-HEAD-DTR.SYNSEM #synsem ].
+
+
+;; RASGOS AUXILIARES: LISTAS
+
+list := avm.
+
+null := list.
+
+cons := list &
+[ FIRST *top*,
+  REST list ].
+
+diff-list := avm &
+[ LIST list,
+  LAST list ].
+
+append-list := diff-list &
+[ LIST.REST #rest,
+  LAST #rest ].
+
+two-append-list := diff-list &
+[ LIST.REST.REST #rest,
+  LAST #rest ].
+
+non-append-list := diff-list &
+[ LIST #list,
+  LAST #list ].
+
+
+;;; DEFINICIÓN DEL LÉXICO
+
+lex-item := lexeme &
+[ CONSTRUCTION bool,
+  INFLECTED no ].
+
+
+;;; XARG, INDEX Y AGREE
+
+;;; La semántica de XARG (argumento más prominente), 
+;;; que afecta a la concordancia, funciona
+;;; del siguiente modo:
+
+;;;    a) Los eventos tienen como argumento
+;;;       XARG al primer argumento hábil 
+;;;       de su arg-st. Si este es el primero,
+;;;       estamos ante una forma activa, si es
+;;;       el siguiente, ante una forma pasiva.
+;;;       Si es el externo (ARG1 y EARG), estamos
+;;;       ante un uso inergativo (o transitivo), y
+;;;       si es el segundo (ARG2 y IARG), estamos
+;;;       ante un uso inacusativo. 
+
+;;;    b) Los individuos se definen a sí mismos
+;;;       como argumento externo.
+
+;;;    c) Se han creado posiciones públicas para
+;;;       los argumentos externo e interno: EARG
+;;;       y IARG, respectivamente. XARG, en tanto
+;;;       que argumento más prominente, será EARG
+;;;       en los usos inergativos activos; y será
+;;;       IARG en los usos pasivos o inacusativos.
+
+;;; CUIDADO: SEGÚN ESTO, LOS INACUSATIVOS SON PASIVOS SEMÁNTICOS...
+
+active-sem := mrs &
+[ HOOK [ INDEX event,
+	 XARG #xarg,
+	 EARG #xarg ],
+  RELS.LIST.FIRST.ARG1 #xarg & individual ].
+
+;;; No se puede identificar ARG2 y IARG porque
+;;; la pasiva refleja permite ARG3 y IARG.
+
+passive-sem := mrs &
+[ HOOK [ INDEX event,
+	 XARG #xarg,
+	 IARG #xarg & individual ]].
+
+instance-sem := mrs &
+[ HOOK [ INDEX index & #index,
+	 XARG #index ]].
+
+instance-sem-lex-item := lexeme & 
+[ SYNSEM.LOCAL.SEM instance-sem ].
+
+active-sem-lex-item := lexeme & 
+[ SYNSEM.LOCAL.SEM active-sem ].
+
+passive-sem-lex-item := lexeme & 
+[ SYNSEM.LOCAL.SEM passive-sem ].
+
+;;; La concordancia se define como identididad 
+;;; del argumento externo con unos rasgos redundantes
+;;; definidos en AGR.
+
+;;; En lexeme, pq. se puede aplicar a reglas léxicas (los
+;;; verbos no tienen concordancia hasta que se flexionan
+;;; como finitos...)
+
+agree-lex-item := lexeme &
+[ SYNSEM.LOCAL [ AGR [ PER #per,
+		       GEND #gend,
+		       NUM #number ],
+		 SEM.HOOK.XARG.I [ PER #per,
+				   GEND #gend,
+				   NUM #number ]]].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; PUBLICAR LOS ÍNDICES ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Semántica normal sin ligar variables.
+
+basic-norm-hook-lex-item := lexeme &
+[ SYNSEM [ KEYS.KEY #relation & [ LBL #handle,
+			                ARG0 #individual ],
+	   LOCAL.SEM [ RELS.LIST.FIRST #relation,
+                       HOOK [ LTOP #handle,
+			      INDEX #individual ]]]].
+
+
+norm-hook-lex-item := basic-norm-hook-lex-item &
+[ SYNSEM.LOCAL.SEM.RELS append-list ].
+
+norm-hcons-lex-item := lexeme &
+[ SYNSEM.LOCAL.SEM.HCONS non-append-list ].
+
+norm-mrs-lex-item := norm-hcons-lex-item & norm-hook-lex-item.
+
+;; Pronombres, chunks nominales que se ligan a sí mismos...
+
+self-binded-mrs-lex-item := basic-norm-hook-lex-item &
+[ SYNSEM.LOCAL.SEM [ RELS two-append-list & [ LIST < [ ARG0 #arg0, 
+						       RSTR #harg ], [ ARG0 #arg0, 
+								       LBL #larg ], ... > ],
+		     HCONS append-list & [ LIST < qeq & [ HARG #harg,
+							  LARG #larg ], ... > ]]].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; LISTAS ARGUMENTALES ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Son lexeme pq. típicamente las reder argumentales
+;;; las van configurando las reglas léxicas.
+
+basic-zero-arg := lexeme &
+[ SYNSEM.NON-LOCAL [ SLASH non-append-list,
+		     TOPIC non-append-list,
+		     CLITICS non-append-list],
+  ARG-ST <>].
+
+;; Falta MORPH a posta pq sigue otro sistema.
+
+basic-one-arg := lexeme &
+[ SYNSEM.NON-LOCAL #non-local,
+  ARG-ST <[NON-LOCAL #non-local], ...>].
+
+;; Sumamos el SLASH de los argumentos.
+;; Todos estos null obligan a que las listas queden cerradas
+;; Supone que la anidación de listas solo es posible a la derecha.
+;; Una forma de evitarlo seróa poniendo el null en root, pero
+;; la sobregeneración solo se eliminaría al final...
+
+basic-two-arg := lexeme &
+[ SYNSEM.NON-LOCAL [ SLASH [ LIST #list,
+			     LAST #last ]],
+  ARG-ST < [ NON-LOCAL.SLASH [ LIST #list,
+			       LAST #list2 ]],
+	   [ NON-LOCAL.SLASH [ LIST #list2,
+			       LAST #last ]], ... >].
+;; Añadimos a los mismos tipos 
+;; la suma del TOIC de los argumentos
+
+basic-two-arg :+ 
+[ SYNSEM.NON-LOCAL [ TOPIC [ LIST #llist,
+			     LAST #llast ]],
+  ARG-ST < [ NON-LOCAL.TOPIC [ LIST #llist,
+			       LAST #llist2 ]],
+	   [ NON-LOCAL.TOPIC [ LIST #llist2,
+			       LAST #llast ]], ... >].
+
+
+basic-two-arg :+ 
+[ SYNSEM.NON-LOCAL [ CLITICS [ LIST #lllist,
+			       LAST #lllast ]],
+  ARG-ST < [ NON-LOCAL.CLITICS [ LIST #lllist,
+				 LAST #lllist2 ]],
+	   [ NON-LOCAL.CLITICS [ LIST #lllist2,
+				 LAST #lllast ]], ... >].
+
+;;; TIPOS PARA LOS VALORES DE NON-LOCAL
+;;; EN LAS UNIDADES LÉXICAS
+
+non-slash-lex-item := lexeme &
+[ SYNSEM.NON-LOCAL.SLASH non-append-list ].
+
+non-topic-lex-item := lexeme &
+[ SYNSEM.NON-LOCAL.TOPIC non-append-list ].
+
+non-clitics-lex-item := lexeme &
+[ SYNSEM.NON-LOCAL.CLITICS non-append-list ].
+
+
+;; UNIDADES LÉXICAS POR CATEGORÍAS
+
+
+;; Definición de la concordancia de verbo/sujeto
+;; Se da por saturado MORPH en la madre. La morfología 
+;; del verbo dependerá de la caracterización de MORPH
+;; en la hija (DTR.SYNSEM.NON-LOCAL.MORPH).
+
+;; Téngase en cuenta que la regla morfológica básica y la de los
+;; clíticos son diferentes... 
+;; Hay que conseguir lo siguiente:
+
+;; a) Los verbos finitos no permiten ascenso de clíticos. Son límite
+;; b) Los verbos no finitos (inf y ger, en realidad) sí permiten ascenso
+;;    si en ellos no hay clíticos explicitados
+;; c) Los verbos no finitos (inf y ger, en realidad) no permiten ascenso
+;;    de clíticos si sí tienen clíticos explicitados. También son límite.
+
+;; Para modelar esto se establecen las dos condiciones de límite en los tipos
+;; correspondientes: fin-verb-irule (verbo finito con o sin clítico) y todo
+;; verbo (finito o no) con clítico explicitado. 
+
+;; Por lo demás, siempre que el verbo no tenga clítico, identificará su lista 
+;; con la de su hija (non-clitic-verb-irule). Cuando sí tenga clíticos, la lista
+;; de la hija estará caracterizada conforme a estos. También cuando un verbo finito
+;; no tiene se caracteriza en consecuencia la lista de la hija.
+
+fin-verb-irule := non-final-infl-rule & agree-lex-item &
+[ INFLECTED no,
+  SYNSEM.LOCAL.HEAD.FORM fin,
+  DTR lex-item ].
+
+no-fin-verb-irule := non-final-infl-rule &
+[ INFLECTED no,
+  DTR lex-item ].
+
+clitic-verb-irule := final-infl-rule & 
+[ DTR non-final-infl-rule ].
+
+non-clitic-verb := final-infl-rule & 
+[ SYNSEM.NON-LOCAL.CLITICS.LIST <>,
+  DTR non-final-infl-rule ].
+
+;;; OTROS
+
+chunk-irule := final-infl-rule.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; CONCEPTO DE ARGUMENTO ;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Un argumento debe ser un elemento saturado  
+;; (VAL saturated) y no predicativo (PRD no).
+
+saturated := val &
+[ COMPS <>,
+  SUBJ <> ].
+
+argument := local &
+[ HEAD.PRD no ].
+
+;; Pueden ser externo o interno.
+;; El externo solo podrá ser nominativo
+;; El interno, estructural.
+;; Además, todo argumento externo denota 
+;; un individuo, nunca un evento (INDEX index).
+
+external := argument &
+[ HEAD det & [ CASE nom ],
+  SEM.HOOK.INDEX index,
+  AGR nominative ].
+
+;;; Esto excluye el oblicuo...
+
+inner := argument &
+[ HEAD.CASE str,
+  AGR structural ].
+
+;; POR CONTRA, PREDICATIVO
+
+;; UN predicativo, también presente en ARG-ST, también
+;; está saturado, pero es PRD yes.
+
+predicative := local &
+[ HEAD.PRD yes,
+  VAL saturated ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; L&R: TIPOS VERBALES ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+basic-verb-lex := norm-mrs-lex-item & lex-item & 
+[ CONSTRUCTION no,
+  SYNSEM phr-synsem & [ LOCAL.HEAD verb ]].
+
+
+;;; Esta es la tipología verbal clásica: L&R.
+;;; Son eventos y estados. Los estados son primitivos: no
+;;; denotan eventos en ningún sentido, solo existencias.
+;;; Los eventos son el resultado del cruce de los rasgos
+;;; ACT y BECOME (actividades y cambios de estado): si un
+;;; evento denota solo una actividad, será activity; si lo
+;;; que denota es solo un cambio de estado, achievement; si
+;;; denota una actividad de la cual resulta un cambio de 
+;;; estado, será accomplishment.
+
+v-semmantic-c := basic-verb-lex & 
+[ SYNSEM [ LOCAL.HEAD verb ]].
+
+;;; Todo evento que de un modo u otro, denote una actividad
+;;; será v-act-c. Argumentalmente, deberá tener un argumento
+;;; externo . Semánticamente, este será ARG1 y será publicado 
+;;; en EARG. No se indica su posición en ARG-ST por cuestiones
+;;; técnicas relativas a los verbos pronominales (estos presentan
+;;; una posición argumental extra al comienzo de ARG-ST. Se esperará
+;;; a las reglas de las construcciones transitiva e inergativa para
+;;; establecer esa información.
+
+;;; En esas reglas, el argumento identificado con esta posición de
+;;; agente será especificado como LOCAL external, de donde se deduce que
+;;; su caso será obligatoriamente nominativo, y su naturaleza semántica 
+;;; de índice, y nunca de evento. De forma redundante, ya se establece
+;;; aquí esa naturaleza de índice (index). El caso nominativo seha especificado
+;;; como valor de concordancia (I nominative).
+
+v-act-c := v-semmantic-c &
+[ SYNSEM.LOCAL.SEM [ HOOK [ INDEX.SORT.ACT yes,
+			    EARG #arg1 ],
+		     RELS.LIST.FIRST.ARG1 #arg1 & index ]].
+
+;;; Todo evento que, de un modo u otro, denote un cambio
+;;; de estado debe heredar de v-become-c. En este caso, el
+;;; argumeto será interno (ARG2) y publicado en IARG. De nuevo
+;;; la naturaleza semántica será de índice (es un paciente afectado).
+;;; El caso será estructural (I structural): podría ser acusativo
+;;; en activa y nominativo en pasiva.
+
+;;; Tampoco se establece aquí la relación con ARG-ST, en este caso con
+;;; más motivo, pues puede haber cambios de estado precedidos o no de
+;;; agente.
+
+v-become-c := v-semmantic-c &
+[ SYNSEM.LOCAL.SEM [ HOOK [ INDEX.SORT.BECOME yes,
+			    IARG #arg2 ],
+		     RELS.LIST.FIRST.ARG2 #arg2 & index ]].
+
+;;; Las realizaciones combinan act y become, como se ha dicho antes.
+;;; En este caso sí se puede especificar ya la relación entre el patrón
+;;; semántico antes descrito y la lista argumental, pues las realizaciones
+;;; siempre tienen los dos argumentos y nunca son pronominales.
+;;; No se publica el argumento externo como argumento prominente, pues en 
+;;; pasiva sería el interno el prominente.
+
+accomplishment := v-act-c & v-become-c &
+[ SYNSEM.LOCAL.SEM [ RELS.LIST.FIRST [ ARG1 #arg1,
+				       ARG2 #arg2 ]],
+  ARG-ST < [ LOCAL external & [ SEM.HOOK.INDEX #arg1 ]],
+	   [ LOCAL inner & [ SEM.HOOK.INDEX #arg2 ]], ... > ].
+
+;;; Por cuestiones técnicas relativas a los pronominales, no
+;;; se puede especificar aquí ya el correlato argumental del
+;;; patrón semántico de los logros. Sí se establece la ausencia
+;;; de argumento externo (y de su publicación) con no-individual.
+;;; Esta caracterización es interesante para restringir el paso
+;;; de caracterizaciones léxicas al sistema de reglas.
+;;; También se publica el argumento interno como argumento prominente.
+
+achievement := v-become-c &
+[ SYNSEM.LOCAL.SEM [ HOOK [ INDEX.SORT.ACT no,
+			    XARG #iarg,
+			    IARG #iarg,
+			    EARG #earg ],
+		     RELS.LIST.FIRST [ ARG1 #earg & no-individual ]]].  
+
+
+;;; Las actividades no tienen paciente (ARG2 no-individual). No se identifica
+;;; este con IARG, pues podría haber un argumento interno tema (ARG3).
+;;; PROVISIONAL. Se establece un tipo semántico SORT do. Con esto se consigue
+;;; que las actividades no puedan tener predicativos... Habrá que ver.
+
+activity := v-act-c &
+[ SYNSEM.LOCAL.SEM [ HOOK.INDEX.SORT.BECOME no,
+		     RELS.LIST.FIRST.ARG2 no-individual ]].
+
+;;; Los estados no heredan de ningún primitivo. Nunca tienen agente, y
+;;; por tanto argumento externo. Tampoco tienen paciente. Pero sí presentan
+;;; como argumento interno un experimentante del estado que denotan. Este
+;;; rol se va a identificar con ARG2 (entiéndase que un paciente ---ARG2 hasta
+;;; ahora--- es un experimentante, en los cambios de estado del cambio y en
+;;; los estados, de la situación no cambiante). Además, puede haber un tema (ARG3).
+
+
+;;; División debida a la excepción de los experimentantes en dativo.
+;;; Los estados tienen un experimentante de la situación que denotan
+;;; Vamos a considerarlo ARG1.
+
+state := v-semmantic-c &
+[ SYNSEM.LOCAL.SEM [ HOOK.INDEX.SORT [ ACT no,
+				       BECOME no ],
+		     RELS.LIST.FIRST [ ARG2 no-individual ]]].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; CONSTRUCCIONES DE ASIGNACIÓN  ;;;;;
+;;;;; DE CASO ESTRUCTURAL           ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; TIPOS AUXILIARES
+
+;;Tipos generales que modelan las cuestiones menos idiosincrásicas:
+;; relación ARG-ST/COMPS, relación ARG-ST/relation...
+
+;; En los transitivos, falta determinar si el argumento interno 
+;; (IARG) se identifica con la posición ARG2 o ARG3 (paciente o
+;; tema, respectivamente). Esto es una cuestión léxica.
+
+;; Es importante external/inner: no se pudo poner en las construcciones
+;; semánticas por la excepción de los pronominales...
+
+;; INDIVIDUAL/NO-INDIVIDUAL.
+;; Importante para la restricción léxico --> construcciones.
+;; Inergativos (y con ellos, transitivos) y pasivos: ARG1 individual
+;; Inacusativos: ARG1 no-individual
+;; Inergativos (y con ellos transitivos) no especifican ARG2/ARG3.Podrían
+;; no tener o tener uno u otro.
+;; Inacusativos: ARG2 individual.
+;; Pasivos: segundo argumento individual, pero no se establece su posición
+;; de rol, pues puede ser tanto ARG2 como ARG3.
+
+unergative := lex-rule &
+[ SYNSEM.LOCAL [ HEAD.VOICE active,
+		 SEM active-sem & [ RELS.LIST.FIRST.ARG1 #arg1 & index ], ;; No se pasa a EARG xq 
+		 VAL [ SUBJ [ FIRST #subj,
+                              REST null ],
+		       COMPS #comps ]],                                           ;; ya está en active-sem
+  ARG-ST [ FIRST #subj & [ LOCAL external & [ SEM.HOOK.INDEX #arg1 ]],
+           REST #comps ]].
+
+;; Patrón de publicación del argumento más prominente pasivo...
+
+unaccusative := lex-rule &
+[ SYNSEM.LOCAL [ HEAD.VOICE active,
+		 SEM passive-sem & [ HOOK.IARG #arg2,
+				     RELS.LIST.FIRST [ ARG1 no-individual ]],
+		 VAL [ SUBJ null,
+                       COMPS #comps ]],
+  ARG-ST #comps & < [ LOCAL inner & [ HEAD.CASE nom,
+				      AGR nominative,
+				      SEM.HOOK.INDEX #arg2 ]], ... >].
+
+passive := lex-rule &
+[ SYNSEM.LOCAL [ SEM passive-sem & [ HOOK.IARG #arg2, ;; No se establece como individual pq ya está en passive-sem
+				     RELS.LIST.FIRST [ ARG1 #arg1 & individual ]],
+		 VAL [ SUBJ null,
+                       COMPS #comps ]],
+  ARG-ST < [ LOCAL external & [ SEM.HOOK.INDEX #arg1 ],
+	     NON-LOCAL [ SLASH non-append-list,
+                         TOPIC non-append-list ]] . #comps & < [ LOCAL inner & [ HEAD.CASE nom,
+                                                                                 AGR nominative,
+                                                                                 SEM.HOOK.INDEX #arg2 ]], ... > > ].
+
+pronominal := lex-rule &
+[ SYNSEM.LOCAL [ HEAD.VOICE active,
+                 SEM active-sem & [ HOOK.PARG #parg ],
+		 VAL [ SUBJ [ FIRST #subj,
+                              REST null ],
+		       COMPS #comps ]],
+  ARG-ST [ FIRST #subj & [ LOCAL [ HEAD.CASE nom,
+                	           AGR nominative,
+                                   SEM.HOOK.INDEX #parg ]], 
+           REST [ FIRST [ NON-LOCAL [ SLASH non-append-list,
+                                      TOPIC non-append-list ]],
+                  REST #comps ]]].
+	     
+;;; TIPOS
+
+v-arg-st-assign-min-c := const-rule.
+
+v-arg-st-assign-c := v-arg-st-assign-min-c.
+
+v-structural-assign-c := v-arg-st-assign-c & 
+[ SYNSEM.NON-LOCAL #non-local,
+    DTR infl-rule & [ SYNSEM [LOCAL.HEAD verb,
+			      NON-LOCAL #non-local ]]].
+
+;; Queda por establecer la identidad entre el argumento interno (IARG)
+;; y la posición de rol: puede ser ARG2 o ARG3, es una cuestión léxica
+;; que se establece en cada unidad. Pero sí se establece que hay argumento
+;; interno y es individual.
+
+;; IMPORTANTE. Identidad #ac Los rasgos de I son de tipo acusativo
+;; Hay situaciones en las que el caso se restringe por ahí...
+
+v-transitive-c := v-structural-assign-c & basic-two-arg & unergative &
+[ SYNSEM.LOCAL [ HEAD.INTR no,
+                 SEM.HOOK [ IARG #iarg & individual ]],
+  ARG-ST [ FIRST synsem,
+           REST [ FIRST [ LOCAL inner & [ AGR [ PER #per,
+                                                GEND #gend,
+                                                NUM #num ],
+	   	  	  	      	  HEAD.CASE acc & [ CLITIC.LIST <[ PER #per,
+                                                                      GEND #gend,
+                                                                      NUM #num ], ... > ],
+			       	          SEM.HOOK.INDEX  #iarg ]],
+                  REST #stopper ]],
+  STOPPER #stopper ].
+
+v-transitive-comp-c := v-transitive-c &
+[ ARG-ST < synsem, phr-synsem & [ LOCAL.HEAD comp,
+                     NON-LOCAL.CLITICS non-append-list ], ... > ].
+
+v-transitive-np-c := v-transitive-c &
+[ ARG-ST < synsem, phr-synsem & [ LOCAL.HEAD det,
+                     NON-LOCAL.CLITICS non-append-list ], ... > ].
+
+v-transitive-clitization-pron-c := v-transitive-c &
+[ ARG-ST < synsem, phr-synsem & [ LOCAL.HEAD det & [ CASE.CLITIC #clitic ],
+                                  NON-LOCAL.CLITICS #clitic ], ... > ].
+
+v-transitive-clitization-topic-c := v-transitive-c &
+[ ARG-ST < synsem, unexpressed-synsem & [ LOCAL.HEAD det & [ CASE.CLITIC #clitic ],
+                                  NON-LOCAL.CLITICS #clitic ], ... > ].
+
+;; La identidad mencionada para los transitivos ya se estableció
+;; en passive.
+
+
+v-passive-c := v-structural-assign-c & basic-two-arg & passive & agree-lex-item &
+[ SYNSEM.LOCAL [ HEAD [ INTR no,
+  	       	       VOICE pass ],
+  	         SEM.HOOK [ INDEX.SORT [ ACT yes,
+			                 BECOME yes ]]],
+  ARG-ST [ FIRST synsem & [ NON-LOCAL.CLITICS non-append-list ], 
+           REST [ FIRST synsem,
+                  REST #stopper ]],
+  STOPPER #stopper ].
+
+
+v-rpass-c := v-structural-assign-c & basic-two-arg & passive &
+[ SYNSEM.LOCAL [ AGR #nom,
+                 HEAD [ INTR no,
+                       VOICE active ]],
+  ARG-ST [ FIRST [ NON-LOCAL.CLITICS append-list & [ LIST < #nom & nominative & [ PER 3 ], ... > ]], 
+           REST [ FIRST synsem,
+                  REST #stopper ]],
+  STOPPER #stopper ].
+
+;; Hay que añadir aquí que no hay ARG2: no-individual.
+
+v-unergative-c := v-structural-assign-c & basic-one-arg & unergative &
+[ SYNSEM.LOCAL [ SEM [ HOOK [ PARG no-individual,
+                              INDEX.SORT.BECOME no ], ;; Aquí nunca aparecerá un cambio de estado
+		       RELS.LIST.FIRST.ARG2 no-individual ]],
+  ARG-ST [ FIRST synsem,
+           REST #stopper ],
+  STOPPER #stopper ].
+
+v-unaccusative-c := v-structural-assign-c & basic-one-arg & unaccusative &
+[ SYNSEM.LOCAL.SEM.HOOK.PARG no-individual,
+  ARG-ST [ FIRST synsem,
+           REST #stopper ],
+  STOPPER #stopper ].
+
+v-pronominal-c := v-structural-assign-c & basic-two-arg & pronominal &
+[ SYNSEM.LOCAL [ AGR #nom,
+  	         SEM.HOOK.PARG index ],
+  ARG-ST [ FIRST synsem, 
+           REST [ FIRST [ LOCAL.SEM.HOOK.INDEX no-individual,
+                          NON-LOCAL [ CLITICS append-list & [ LIST < nominative & #nom, ... > ]]],
+                  REST #stopper ]],
+  STOPPER #stopper ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; CONSTRUCCIONES QUE ASIGNAN DATIVO ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+v-dative-c := v-arg-st-assign-min-c & basic-add-arg &
+[ CONSTRUCTION yes,
+  SYNSEM.LOCAL.SEM.RELS.LIST.FIRST.ARG4 #arg4, ;; Siempre será un beneficiario
+  STOPPER #stopper,
+  DTR v-arg-st-assign-c & 
+	       [ STOPPER [ FIRST [ LOCAL argument & [ HEAD.CASE dat & [ CLITIC.LIST <[ PER #per,
+                                                                                       GEND #gend,
+                                                                                       NUM #num ], ... > ],
+				     		      AGR [ PER #per,
+                                                            GEND #gend,
+                                                            NUM #num ],
+						      SEM.HOOK.INDEX #arg4 & index ]],
+                           REST #stopper ]]].
+
+v-dative-np-c := v-dative-c &
+[ DTR.STOPPER < phr-synsem & [ LOCAL.HEAD det,
+  	                       NON-LOCAL.CLITICS non-append-list ], ... > ].
+
+v-dative-clitization-pron-c := v-dative-c &
+[ DTR.STOPPER < phr-synsem & [ LOCAL.HEAD det & [ CASE.CLITIC #clitic ],
+                  	       NON-LOCAL.CLITICS #clitic ], ... > ].
+
+v-dative-clitization-topic-c := v-dative-c &
+[ DTR.STOPPER < unexpressed-synsem & [ LOCAL.HEAD det & [ CASE.CLITIC #clitic ],
+                  	       NON-LOCAL.CLITICS #clitic ], ... > ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; CONSTRUCCIONES QUE ASIGNAN OBLICUO ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+v-obliq-c := v-arg-st-assign-c & basic-add-arg &
+[ SYNSEM [ KEYS.OKEY cons,
+           LOCAL.SEM.RELS.LIST.FIRST.ARG3 #arg3 ],  ; Siempre será un tema
+  STOPPER #stopper,
+  DTR v-structural-assign-c & 
+	       [ STOPPER [ FIRST [ LOCAL argument & [ HEAD.CASE obl,
+						SEM.HOOK.INDEX #arg3 & individual ]],
+                           REST #stopper ]]].
+
+
+v-obliq-comp-c := v-obliq-c &
+[ DTR.STOPPER < phr-synsem & [ LOCAL.HEAD comp,
+                  NON-LOCAL.CLITICS non-append-list ], ... > ].
+
+v-obliq-np-c := v-obliq-c &
+[ DTR.STOPPER < [ LOCAL.HEAD det,
+                  NON-LOCAL.CLITICS non-append-list ], ... > ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; CONSTRUCCIONES QUE ASIGNAN OBLICUO ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+v-predicative-c := v-arg-st-assign-c & basic-add-arg &
+[ SYNSEM.LOCAL.SEM.HOOK.CARG index & #arg,
+  STOPPER #stopper,
+  DTR v-structural-assign-c & 
+      [ STOPPER [ FIRST phr-synsem & [ LOCAL predicative & [ SEM.HOOK.XARG #arg ]],
+                  REST #stopper ]]].
+
